@@ -16,6 +16,7 @@
 | Resource | What it adds |
 |---|---|
 | `rklspawnmonster` | monster and boss kills give class XP |
+| an ambulance / revive script | the Priest's **Rite of Resurrection** raises fallen players through it (esx_ambulancejob, esx_death, qb-ambulancejob, qbx_medical, wasabi_ambulance, ars_ambulancejob, or your own); without one it uses its own standalone get-up. See [Integration](integration.md#the-priests-rite-of-resurrection-revive--ambulance-systems). |
 | ox_inventory (ESX) | needed only by rklui's Stat part (potions, crafting, item effects); switch that part off without it |
 
 ## What you get
@@ -32,12 +33,13 @@
   rklelf/           Elf (Elementalist)
   rklarcher/        Archer
   rklkitsune/       Kitsune
+  rklpriest/        Priest
 rklselectspecies/   the species selection screen
 rklui/              the fantasy HUD + the shared class mana and class network + mock battles
 ```
 
 Every class is a complete resource on its own: its spells, icons, models, particles and sounds are inside its own
-folder. You can run all ten or only the ones you want.
+folder. You can run all eleven or only the ones you want.
 
 **rklui** has three parts, each with a switch in its `config.lua` (`Config.Modules = { Hud = true, Mana = true, Stat = true }`):
 

@@ -8,7 +8,7 @@
    mana, elements, passive and three signature skills. *Embrace this path* picks it; the server checks the pick
    against your rules (changes allowed, cooldown, admin-only classes) and applies it.
 2. **Or an admin gives it**: `/setclass <server id | identifier> <class> [grade]`, and `/setclass <id> none` takes it
-   away. Class names: `god`, `demon`, `merfolk`, `vampire`, `werewolf`, `fairy`, `witch`, `elf`, `archer`, `kitsune`.
+   away. Class names: `god`, `demon`, `merfolk`, `vampire`, `werewolf`, `fairy`, `witch`, `elf`, `archer`, `kitsune`, `priest`.
 3. **Ranks**: every class has ten ranks (grade 0 = rank 1 ... grade 9 = rank 10, the leader). By default spells 1-2
    are open at rank 1 and each rank opens one more slot; quick abilities open at rank 5. The leader promotes members
    in the class hall.
@@ -26,7 +26,7 @@ where you left off.
 | **`E`** | cast a targeted spell at the ground marker |
 | **Backspace** or **right mouse** again | cancel the aim; Backspace also cancels a cast bar |
 | the same slot again | end, land or detonate a spell that keeps running (it glows on the bar) |
-| **`B`** | the quick ability (Vampire, Fairy, Witch, Elf, Archer, Kitsune) |
+| **`B`** | the quick ability (Vampire, Fairy, Witch, Elf, Archer, Kitsune, Priest) |
 
 - **Direct** spells go off at once. **Targeted** spells show a ground marker (red = out of range) and sometimes a
   preview of the area; nothing locks on: the spell lands where you aimed and the server decides who stood there.
@@ -47,6 +47,8 @@ where you left off.
 | Fairy | Wildwood Barrage | `E` hurls a sapling |
 | Witch | Smoke Form | `W A S D` drift, `Left Ctrl` rise, `Space` sink, `Shift` surge, `9` reforms |
 | Archer | Piercing Shot | hold to draw; let go, left mouse or 1.2 s looses |
+| Priest | Mending Light, Aegis, Renewal, Purify, Blessing | aim at an ally and press the slot; aim at nothing (or the sky) to cast on yourself |
+| Priest | Rite of Resurrection | walk up to a fallen player and press `E` (5 s); `E`, `Backspace` or `W A S D` cancel |
 
 ## Player commands
 
@@ -58,7 +60,7 @@ where you left off.
 | `/<class>bar hide` / `show` / `toggle` | each class | hide or show the bar (spells still cast while it is hidden) |
 
 Bar commands: `/godbar`, `/demonbar`, `/merfolkbar`, `/vampirebar`, `/werewolfbar`, `/fairybar`, `/witchbar`,
-`/elfbar`, `/archerbar`, `/kitsunebar`.
+`/elfbar`, `/archerbar`, `/kitsunebar`, `/priestbar`.
 
 Inside the hall: `1`-`6` switch tabs, `/` searches, `PageUp` / `PageDown` change pages, `ESC` closes. An invitation
 card answers with `Y` (accept) or `N` (decline).

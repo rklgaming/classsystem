@@ -2,8 +2,8 @@
 
 [Back to the overview](../README.md)
 
-Ten spells per class on slots `1`-`0` (slot 10 = key `0`), plus a quick ability on `B` for six classes. Every class has
-a passive that is always on, its own mana and ten ranks. Only the God heals; every other class keeps only the HP it
+Ten spells per class on slots `1`-`0` (slot 10 = key `0`), plus a quick ability on `B` for seven classes. Every class has
+a passive that is always on, its own mana and ten ranks. The God and the Priest heal; every other class keeps only the HP it
 gains by attacking.
 
 | Class | Resource | `/setclass` name | Mana | Passive |
@@ -18,6 +18,7 @@ gains by attacking.
 | [Elf](#elf) | `rklelf` | `elf` | Aether | Elemental Resonance |
 | [Archer](#archer) | `rklarcher` | `archer` | Focus | Marksman's Rhythm |
 | [Kitsune](#kitsune) | `rklkitsune` | `kitsune` | Spirit | Fox Trickery |
+| [Priest](#priest) | `rklpriest` | `priest` | Faith | Afterglow |
 
 ---
 
@@ -232,3 +233,27 @@ dash or a swap the next spell needs no cast time.
 | 8 | Spirit Possession | a fox spirit weakens and slows an enemy |
 | 9 | Trickster's Swap | swap places with a copy or a marked enemy |
 | 10 | Ninefold Awakening | ultimate: nine foxfire flames, faster, every spell bursts |
+
+## Priest
+
+*Keeper of the Dawn* · healer, support, guardian · holy and light. A healer first, a giver of blessings second, with a
+few strikes of holy light - and she raises the fallen with the **Rite of Resurrection** (`E` at a fallen player, 5 s),
+through your own ambulance script ([how to wire it](integration.md#the-priests-rite-of-resurrection-revive--ambulance-systems)).
+
+**Passive · Afterglow**: every heal she gives leaves a small shield of light; healing another player gives Faith back;
+Smite and Holy Nova hits charge Zeal for a stronger Mending Light. Her heals are capped on the server (one heal at most
+35; per player 70 HP per 10 s and 60 shield per 12 s across all priests).
+
+| Slot | Spell | In short |
+|---|---|---|
+| B | Sacred Step | an 8 m glide-step of light |
+| 1 | Mending Light | heals the ally under your aim (22 HP), or yourself |
+| 2 | Smite | a lance of holy light at the foe under your aim |
+| 3 | Aegis of Faith | a dome of light that absorbs 35 spell damage |
+| 4 | Prayer of Renewal | a halo that heals 6 HP every 1.5 s |
+| 5 | Purify | lifts roots, slows, chills, burns, bleeds and poison |
+| 6 | Sanctuary | a circle of dawn runes that heals everyone inside |
+| 7 | Holy Nova | strikes and binds foes around you, heals your allies |
+| 8 | Blessing of Might | +15 % spell damage for an ally |
+| 9 | Hymn of Haste | everyone around you moves 20 % faster |
+| 10 | Miracle of Dawn | ultimate: heals, shields and frees your allies, pushes foes back |

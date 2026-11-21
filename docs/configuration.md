@@ -2,7 +2,7 @@
 
 [Back to the overview](../README.md)
 
-Every class has its own `config.lua`. All ten are built on the same class core, so the sections below are the same in
+Every class has its own `config.lua`. All eleven are built on the same class core, so the sections below are the same in
 each one; only the class block, the passive and the spells differ. A feature you may not want is a switch
 (`Enabled = true / false`), never hard-wired. Texts live in `language.lua`, never in `config.lua`.
 
@@ -27,7 +27,7 @@ Discord webhook goes in `server/server_open.lua`).
 | `Config.Keys` | the ten slot keys (`1`-`0`) |
 | `Config.Targeting`, `Config.Protection`, `Config.Damage` | who spells may hit (players, NPCs, vehicles), spawn protection, damage rules |
 | `Config.Status` | crowd control kinds (root, slow, stun, blind, fear, lift, silence ...) with immunity and cleanse rules |
-| `Config.Healing` | only the God class heals by default; every other class keeps only HP gained by attacking |
+| `Config.Healing` | the healing classes are the **God** and the **Priest**; every other class keeps only HP gained by attacking |
 | `Config.Buffs` | power, ward, protect, haste, focus, slow, weaken: used when rklui is not running |
 | `Config.UI` | the bar: saved layout, edit command (`/<class>bar`), hide / show key and button, theme accent, slot shape and size |
 | `Config.Ranks` | the names of the ten ranks (English + Tagalog) and their badge colour / icon |
@@ -36,6 +36,8 @@ Discord webhook goes in `server/server_open.lua`).
 | `Config.Editor` | the admin spell editor in the hall (see below) |
 | `Config.Levels` | levels, XP, skill points and spell ranks (see [Levels and spell ranks](levels.md)) |
 | `Config.Passive` | the class passive: every part has its own switch; `Enabled = false` removes it |
+| `Config.Heal`, `Config.Shield`, `Config.Support` (Priest) | heal and shield caps: one heal at most 35, per player 70 HP / 10 s and 60 shield / 12 s across all priests; who a heal may target |
+| `Config.Revive` (Priest) | the Rite of Resurrection: which revive / ambulance system it calls, the 5 s channel, ranges, cooldowns, the Faith cost (see [Integration](integration.md#the-priests-rite-of-resurrection-revive--ambulance-systems)) |
 | `Config.Spells.<key>` | every spell: slot, rank, cost, cooldown, cast time, range, damage, statuses, colours, particles, sounds, timings |
 
 ### A spell block

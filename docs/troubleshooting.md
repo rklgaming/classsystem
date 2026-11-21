@@ -24,6 +24,9 @@
 | The hall says "member records are not available" | oxmysql is not started; online members still work. |
 | No leader in the hall | The leader is the highest grade (or a grade named `boss`); check the console `hall:` line or set `Config.Boss.grades`. |
 | Two clients on one account share cooldowns | Run `/<resource>cdkeys` in the console; if two players show the same key, set `Config.CooldownKey = 'session'`. |
+| The `[E] Rite of Resurrection` prompt does not show over a fallen player | Your ambulance script marks "down" in a way the Priest does not know yet: add its state bag key to `Config.Revive.deadBags`, or edit `PriestSpellsOpen.IsDeadBody` in `rklpriest/client/client_open.lua`. The prompt never shows for a player in a vehicle (`skipInVehicle`). |
+| The rite finishes but the player stays down | `Config.Revive.system` calls the wrong script (or an event your version renamed): set `system` to your script, use `'custom'` with its revive event, or edit `PriestServerOpen.RevivePlayer` in `server/server_open.lua`. `Config.Debug = true` shows which system `'auto'` picked. |
+| "Not down" when the player clearly is | The server's check `PriestServerOpen.IsPlayerDead` does not know your script: edit it in `server/server_open.lua`, or add the state bag key to `Config.Revive.deadBags`. |
 | No XP from monsters | XP for kills needs rklspawnmonster; spell XP only counts hits on other players (2 XP, capped per minute). |
 
 ## Testing alone
