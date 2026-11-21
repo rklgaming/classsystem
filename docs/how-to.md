@@ -7,7 +7,7 @@ server console (txAdmin **Live Console**) **without** the `/`. Settings are in e
 change a `config.lua`, restart that resource (console: `ensure rklarcher`, or restart the server).
 
 Class names for commands: `god`, `demon`, `merfolk`, `vampire`, `werewolf`, `fairy`, `witch`, `elf`, `archer`,
-`kitsune`, `priest`. A player's **server ID** is the number txAdmin shows next to their name.
+`kitsune`, `priest`, `assassin`. A player's **server ID** is the number txAdmin shows next to their name.
 
 ## Players and classes
 

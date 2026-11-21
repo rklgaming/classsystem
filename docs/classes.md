@@ -2,7 +2,7 @@
 
 [Back to the overview](../README.md)
 
-Ten spells per class on slots `1`-`0` (slot 10 = key `0`), plus a quick ability on `B` for seven classes. Every class has
+Ten spells per class on slots `1`-`0` (slot 10 = key `0`), plus a quick ability on `B` for eight classes. Every class has
 a passive that is always on, its own mana and ten ranks. The God and the Priest heal; every other class keeps only the HP it
 gains by attacking.
 
@@ -19,6 +19,7 @@ gains by attacking.
 | [Archer](#archer) | `rklarcher` | `archer` | Focus | Marksman's Rhythm |
 | [Kitsune](#kitsune) | `rklkitsune` | `kitsune` | Spirit | Fox Trickery |
 | [Priest](#priest) | `rklpriest` | `priest` | Faith | Afterglow |
+| [Assassin](#assassin) | `rklassassin` | `assassin` | Cunning | Nightshade Edge |
 
 ---
 
@@ -257,3 +258,26 @@ Smite and Holy Nova hits charge Zeal for a stronger Mending Light. Her heals are
 | 8 | Blessing of Might | +15 % spell damage for an ally |
 | 9 | Hymn of Haste | everyone around you moves 20 % faster |
 | 10 | Miracle of Dawn | ultimate: heals, shields and frees your allies, pushes foes back |
+
+## Assassin
+
+*Nightshade Blade* · assassin, burst, mobility · venom, shadow and physical. A hooded blade of a nameless order: twin
+daggers, alchemist poisons, ash smoke, a sigil, backstabs and an execute. No healing at all - her spells give Cunning
+back, never health.
+
+**Passive · Nightshade Edge**: hits from behind deal +35 % (the server decides from real positions); her daggers, knives
+and vial stack Venom on a foe (up to 3, 2 HP a second per stack); a backstab gives Cunning back, a kill much more.
+
+| Slot | Spell | In short |
+|---|---|---|
+| B | Shade Step | a 7 m low dash that keeps you hidden |
+| 1 | Twin Fang | two quick stabs that add Venom; at 3 Venom the next stab ruptures it |
+| 2 | Nightshade Knives | three throwing knives in a fan |
+| 3 | Venom Vial | a poison cloud at your mark |
+| 4 | Umbral Lunge | lunge behind the foe under your aim and stab |
+| 5 | Black Mark | mark a foe: more damage, seen through walls, executes sooner |
+| 6 | Nightshroud | fade for up to 6 s; the first strike out of it is an Ambush |
+| 7 | Ashen Smoke | a smoke cloud that blocks sight, blinds and slows |
+| 8 | Crippling Cut | a sweep at the legs that slows |
+| 9 | Riposte | a 1 s guard; a blocked hit earns a counter-stab |
+| 10 | Coup de Grace | ultimate: seize a foe from behind and strike; executes the weakened |

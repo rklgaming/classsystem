@@ -34,7 +34,7 @@ Open your server's `resources` folder and look for these two folders:
 
 1. Copy these folders into your server's `resources` folder:
    - `[class]` (the class resources: `rklgods`, `rkldemon`, `rklmerfolk`, `rklvampire`, `rklwerewolf`,
-     `rklfairyspells`, `rklwitchspells`, `rklelf`, `rklarcher`, `rklkitsune`, `rklpriest`)
+     `rklfairyspells`, `rklwitchspells`, `rklelf`, `rklarcher`, `rklkitsune`, `rklpriest`, `rklassassin`)
    - `rklui` (the HUD and the shared mana)
    - `rklselectspecies` (the species selection screen)
 2. **Do not rename the folders.** The scripts find each other by these names.

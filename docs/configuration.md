@@ -2,7 +2,7 @@
 
 [Back to the overview](../README.md)
 
-Every class has its own `config.lua`. All eleven are built on the same class core, so the sections below are the same in
+Every class has its own `config.lua`. All twelve are built on the same class core, so the sections below are the same in
 each one; only the class block, the passive and the spells differ. A feature you may not want is a switch
 (`Enabled = true / false`), never hard-wired. Texts live in `language.lua`, never in `config.lua`.
 

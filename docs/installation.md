@@ -34,12 +34,13 @@
   rklarcher/        Archer
   rklkitsune/       Kitsune
   rklpriest/        Priest
+  rklassassin/      Assassin
 rklselectspecies/   the species selection screen
 rklui/              the fantasy HUD + the shared class mana and class network + mock battles
 ```
 
 Every class is a complete resource on its own: its spells, icons, models, particles and sounds are inside its own
-folder. You can run all eleven or only the ones you want.
+folder. You can run all twelve or only the ones you want.
 
 **rklui** has three parts, each with a switch in its `config.lua` (`Config.Modules = { Hud = true, Mana = true, Stat = true }`):
 

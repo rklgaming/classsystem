@@ -43,7 +43,7 @@ after pressing <kbd>T</kbd>.
 
 1. Press <kbd>B</kbd> - no aiming needed.
 2. Vampire Shadow Dash, Fairy Fae Step, Witch Hex Mirror, Elf Sylvan Veil, Archer Roll Shot, Kitsune Spirit Fox Step,
-   Priest Sacred Step. It unlocks at rank 5.
+   Priest Sacred Step, Assassin Shade Step. It unlocks at rank 5.
 
 ### End a spell that keeps running
 
@@ -89,7 +89,7 @@ after pressing <kbd>T</kbd>.
 ### Turn my class's extras on or off
 
 1. Open `/<class>bar`. Some classes have personal switches there, for example the God's aura, the Witch's crow, the
-   Archer's bow on the back, the Kitsune's mark pips, the Priest's heal numbers and ally ring.
+   Archer's bow on the back, the Kitsune's mark pips, the Priest's heal numbers and ally ring, the Assassin's daggers in hand and shroud tint.
 2. Switch them on or off; they only change what you see.
 
 ## Levels and ranks

@@ -3,7 +3,7 @@
 [Back to the overview](../README.md)
 
 Every class resource has the same exports. Replace `rklarcher` with the class you call (`rklgods`, `rkldemon`,
-`rklmerfolk`, `rklvampire`, `rklwerewolf`, `rklfairyspells`, `rklwitchspells`, `rklelf`, `rklarcher`, `rklkitsune`, `rklpriest`).
+`rklmerfolk`, `rklvampire`, `rklwerewolf`, `rklfairyspells`, `rklwitchspells`, `rklelf`, `rklarcher`, `rklkitsune`, `rklpriest`, `rklassassin`).
 
 ## Who holds which class
 
@@ -92,6 +92,9 @@ exports['rkldemon']:AddHellfireZone({ center = coords, radius = 5.0, ms = 6000 }
 exports['rkldemon']:IsInHellfire()                        -- client
 Player(serverId).state.rkldemon_souls                     -- souls (any side)
 Player(serverId).state.rkldemon_form                      -- set while the Demon Lord form runs
+
+-- Assassin
+Player(serverId).state.as_shroud                         -- set while Nightshroud hides her (the server ends it)
 ```
 
 Each class README (inside the resource) lists the rest of its own exports and state bags.

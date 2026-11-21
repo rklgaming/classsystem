@@ -1,6 +1,6 @@
 # RKL Class System
 
-Eleven fantasy classes for FiveM, each with ten spells, a passive and its own class hall, plus class levels 1-50 with
+Twelve fantasy classes for FiveM, each with ten spells, a passive and its own class hall, plus class levels 1-50 with
 spell ranks, an in-game species selection screen and a fantasy HUD with one shared mana pool for every class.
 
 **Interactive guide: https://rklgaming.github.io/classsystem/** - a task finder ("How do I...?"), every class with its spells,
@@ -11,8 +11,8 @@ sold on our Tebex store and are not part of this repository.
 
 | | |
 |---|---|
-| **Classes** | God · Demon · Merfolk · Vampire · Werewolf · Fairy · Witch · Elf · Archer · Kitsune · Priest |
-| **Spells** | 117 (ten per class + seven quick abilities) and eleven passives; the Priest also raises fallen players (works with your ambulance script) |
+| **Classes** | God · Demon · Merfolk · Vampire · Werewolf · Fairy · Witch · Elf · Archer · Kitsune · Priest · Assassin |
+| **Spells** | 128 (ten per class + eight quick abilities) and twelve passives; the Priest also raises fallen players (works with your ambulance script) |
 | **Progression** | ten ranks per class (the class hall) + levels 1-50 with skill points and spell ranks |
 | **HUD + mana** | `rklui`: health and mana orbs, one shared server-checked mana pool, buffs, mock battles |
 | **Frameworks** | ESX Legacy, QBCore, Qbox (auto-detected) or standalone through ACE |
@@ -44,7 +44,7 @@ ensure ox_lib
 ensure oxmysql
 ensure es_extended          # or qb-core / qbx_core (leave out for standalone)
 ensure rklui                # the HUD + shared mana (keep the folder name rklui)
-ensure [class]              # the folder with the eleven class resources
+ensure [class]              # the folder with the twelve class resources
 ensure rklselectspecies
 add_ace group.admin rklclass.admin allow
 add_ace group.admin rklmana.admin allow
