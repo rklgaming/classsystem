@@ -20,8 +20,15 @@ sold on our Tebex store and are not part of this repository.
 
 ## Documentation
 
+**New to FiveM or not a developer? Start with [Getting started](docs/getting-started.md)** - from download to your
+first spell, step by step.
+
 | Page | What is in it |
 |---|---|
+| [Getting started](docs/getting-started.md) | for beginners: download, folders, `server.cfg`, admin rights, first test - no coding |
+| [How-to](docs/how-to.md) | every admin job step by step: give classes, change spells, levels, the hall, languages, the Priest's revive, updates |
+| [Player guide](docs/player-guide.md) | for your players: pick a class, cast, the bar, levels, the hall, mock battles |
+| [FAQ and glossary](docs/faq.md) | common questions and every word explained |
 | [Installation](docs/installation.md) | requirements, folders, `ensure` order, permissions, the database tables, the first class |
 | [Commands and controls](docs/commands-and-controls.md) | how players pick, cast and level a class; every command and keybind |
 | [Configuration](docs/configuration.md) | the `config.lua` of a class, section by section, and the species screen's config |

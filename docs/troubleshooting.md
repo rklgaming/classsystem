@@ -15,6 +15,11 @@
 
 | Problem | Fix |
 |---|---|
+| *"You lack the required entitlement"* in the console | The server's license key belongs to another Cfx.re account than the one that bought the asset. Use a license key from the buying account (keymaster / Cfx.re Portal), or have the asset transferred to the account of your key. |
+| *"Couldn't find resource ox_lib"* or *"... oxmysql"* | That resource is not in your `resources` folder, or its `ensure` line is missing / below the classes. Download the **release** zip ([Getting started](getting-started.md#step-1---check-what-your-server-already-has)) and put `ensure ox_lib` and `ensure oxmysql` above `ensure [class]`. |
+| *"@ox_lib/init.lua"* errors | You downloaded ox_lib's source code instead of the release zip. Download `ox_lib.zip` from its releases page. |
+| oxmysql says it cannot connect | Your database line (`set mysql_connection_string ...`) in `server.cfg` is missing or wrong. txAdmin recipes add it for you; check the user, password and database name. |
+| Nothing happens, no errors | The folders were renamed, or `ensure [class]` is missing. Keep the folder names exactly as shipped. |
 | A player cannot cast anything | They hold no class, or a different one: check `Player(id).state['rkl:class']`, give one with `/setclass`. Spells also need **right mouse held** while pressing `1`-`0` (`Config.Casting.requireAim`). |
 | A slot shows chains | The spell is locked by rank (the tooltip names the rank it needs). Promote the player in the hall, or change `Config.SpellLadder`. |
 | "Your mana is still loading" | rklui has not built the player's pool yet (right after joining or a rklui restart); try again a moment later. |
