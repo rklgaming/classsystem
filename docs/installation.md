@@ -15,8 +15,8 @@
 
 | Resource | What it adds |
 |---|---|
-| `rklui` | one shared mana pool for every class, the fantasy HUD, the class network (statuses, shields, elements and reactions, cross-class buffs) and mock battles. Without it every class runs alone on its own mana (armour by default). |
 | `rklspawnmonster` | monster and boss kills give class XP |
+| ox_inventory (ESX) | needed only by rklui's Stat part (potions, crafting, item effects); switch that part off without it |
 
 ## What you get
 
@@ -33,20 +33,33 @@
   rklarcher/        Archer
   rklkitsune/       Kitsune
 rklselectspecies/   the species selection screen
+rklui/              the fantasy HUD + the shared class mana and class network + mock battles
 ```
 
 Every class is a complete resource on its own: its spells, icons, models, particles and sounds are inside its own
 folder. You can run all ten or only the ones you want.
 
+**rklui** has three parts, each with a switch in its `config.lua` (`Config.Modules = { Hud = true, Mana = true, Stat = true }`):
+
+| Part | What it is |
+|---|---|
+| Hud | the fantasy vitals HUD: health and mana orbs, stamina / breath, hunger and thirst, `/hudsettings`, `/rest` |
+| Mana | one server-checked mana pool shared by every class + the class network (statuses, shields, marks, elements and reactions, cross-class buffs, one move-speed arbiter) + mock battles |
+| Stat | potions, crafting and item effects for ESX + ox_inventory; switch it off (`Stat = false`) if you do not use it |
+
+Without rklui every class runs alone on its own mana pool (armour by default). If you keep rklui started but turn its
+Mana part off, set `Config.Rklmana.Enabled = false` in each class.
+
 ## Steps
 
-1. Put the `[class]` folder and `rklselectspecies` in your server's `resources` folder. Keep the folder names.
+1. Put the `[class]` folder, `rklui` and `rklselectspecies` in your server's `resources` folder. Keep the folder names
+   (the classes call `exports.rklui`).
 2. Add to `server.cfg`, **after** your framework:
 
    ```cfg
    ensure ox_lib
    ensure oxmysql
-   ensure rklui                 # optional: shared mana, HUD, mock battles
+   ensure rklui                 # the HUD + shared mana (after es_extended / ox_inventory)
    ensure [class]
    ensure rklselectspecies
    ```
@@ -57,6 +70,7 @@ folder. You can run all ten or only the ones you want.
 
    ```cfg
    add_ace group.admin rklclass.admin allow             # /setclass, the spell editor, the level commands (every class)
+   add_ace group.admin rklmana.admin allow              # rklui: /setmana, /classes, /manadebug, stopping a mock battle
    add_ace group.admin rklselectspecies.admin allow     # admin-only species, cooldown bypass, /resetspecies
    ```
 

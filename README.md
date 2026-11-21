@@ -1,7 +1,7 @@
 # RKL Class System
 
 Ten fantasy classes for FiveM, each with ten spells, a passive and its own class hall, plus class levels 1-50 with
-spell ranks and an in-game species selection screen.
+spell ranks, an in-game species selection screen and a fantasy HUD with one shared mana pool for every class.
 
 This repository holds the **documentation only**: how to install, set up and use the Class System. The scripts are
 sold on our Tebex store and are not part of this repository.
@@ -11,6 +11,7 @@ sold on our Tebex store and are not part of this repository.
 | **Classes** | God · Demon · Merfolk · Vampire · Werewolf · Fairy · Witch · Elf · Archer · Kitsune |
 | **Spells** | 106 (ten per class + six quick abilities) and ten passives |
 | **Progression** | ten ranks per class (the class hall) + levels 1-50 with skill points and spell ranks |
+| **HUD + mana** | `rklui`: health and mana orbs, one shared server-checked mana pool, buffs, mock battles |
 | **Frameworks** | ESX Legacy, QBCore, Qbox (auto-detected) or standalone through ACE |
 | **Needs** | ox_lib, oxmysql, OneSync |
 
@@ -32,9 +33,11 @@ sold on our Tebex store and are not part of this repository.
 ensure ox_lib
 ensure oxmysql
 ensure es_extended          # or qb-core / qbx_core (leave out for standalone)
+ensure rklui                # the HUD + shared mana (keep the folder name rklui)
 ensure [class]              # the folder with the ten class resources
 ensure rklselectspecies
 add_ace group.admin rklclass.admin allow
+add_ace group.admin rklmana.admin allow
 add_ace group.admin rklselectspecies.admin allow
 ```
 

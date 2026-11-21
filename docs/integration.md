@@ -138,9 +138,10 @@ AddEventHandler('esx:playerLoaded', function(src)
 end)
 ```
 
-## With rklui (optional)
+## rklui (the class network)
 
-With rklui running (`Config.Rklmana.resource = 'rklui'`), every class shares one server-checked mana pool, statuses (a
+With rklui running (`Config.Rklmana.resource = 'rklui'`, the default), every class shares one server-checked mana pool, statuses (a
 stun from any class blocks casting in every class), shields, elements and reactions, marks, cross-class buffs and one
 move-speed arbiter, and players can fight non-lethal mock battles. Each part has its own switch in `Config.Rklmana`;
-`Enabled = false` keeps a class fully standalone. Nothing breaks when rklui is stopped.
+`Enabled = false` keeps a class fully standalone. Nothing breaks when rklui is stopped. rklui's own exports
+(`exports.rklui`, mana, buffs, mock battle) are listed in the README inside the rklui folder.

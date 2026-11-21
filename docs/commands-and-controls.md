@@ -79,13 +79,21 @@ card answers with `Y` (accept) or `N` (decline).
 
 The level commands are shared by every class: the class the target player is in answers them.
 
-## With rklui (optional)
+## rklui: HUD, mana and mock battles
 
 | Command | What it does |
 |---|---|
+| `/hudsettings` | the HUD settings: essence, metal, size, position, numbers, parts, effects |
+| `/rest` | sit down and regenerate |
 | `/mana` | your mana pool |
 | `/buffs` | the detail panel of your buffs, debuffs, statuses and marks |
 | `/mockbattle <id>` | challenge a nearby player to a non-lethal duel (`accept` / `decline`) |
 | `/mockbattle ring` / `join <hostId>` / `start` / `leave` | a free-for-all ring of up to 8 players |
 | `/mockstats` | your mock battle record and the class table |
 | `/hidehud` | hide or show the whole UI, every class bar included |
+| `/setmana <id> <value \| max>` | admin: set a player's mana pool |
+| `/classes` | admin: the registered classes and the players online per class |
+| `/mockbattle stop <hostId>` | admin: stop a battle |
+
+A mock battle is non-lethal: fighters are healed and refilled at the start, cannot drop below a knock-out threshold,
+and outsiders cannot hit them. Wins, losses and KOs are kept per player and per class (`/mockstats`).
