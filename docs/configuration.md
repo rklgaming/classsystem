@@ -59,7 +59,7 @@ at most 2.5 s, `maxPerVictim` per cast) apply after every bonus, so balance stay
 
 ### The spell editor (in game, admins)
 
-`/manageclass <class>` > **Editor**: every spell in bar order. Move a spell to another slot, change its damage, mana,
+`/manageclass <class>` > **Editor** (admins only: the server refuses it for everyone else): every spell in bar order. Move a spell to another slot, change its damage, mana,
 cooldown, range / radius, cast time, crowd control, on / off and unlock rank, or open *Show all values*. Each field shows
 the shipped value with a reset button. **Save** applies at once for every player and writes only the changed values to
 `data/spell_overrides.json` (the previous file is kept as `.prev.json`). A hand edit of that file is picked up within

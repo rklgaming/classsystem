@@ -6,6 +6,9 @@ Every common job, step by step. Commands are typed in the game chat (press <kbd>
 server console (txAdmin **Live Console**) **without** the `/`. Settings are in each class's `config.lua`; after you
 change a `config.lua`, restart that resource (console: `ensure rklarcher`, or restart the server).
 
+**Only admins** can do the jobs on this page (who counts as admin: [Getting started, step 5](getting-started.md#step-5---give-yourself-admin-rights)).
+The server checks it every time; players cannot change spells, classes or levels, even with a modified game.
+
 Class names for commands: `god`, `demon`, `merfolk`, `vampire`, `werewolf`, `fairy`, `witch`, `elf`, `archer`,
 `kitsune`, `priest`, `assassin`. A player's **server ID** is the number txAdmin shows next to their name.
 

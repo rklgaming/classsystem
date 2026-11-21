@@ -32,6 +32,17 @@ hides them.
 
 No, one class at a time. But each class keeps its own level, so switching back continues where the player left off.
 
+### Can players change the spells, or give themselves a class or levels?
+
+No. Only admins can: the spell Editor, `/setclass`, `/classxp`, `/classlevel`, `/classpoints` and the hall's admin tabs
+are checked by the **server** on every request, so even a player with a modified game is refused. Admins are the
+server console, players with the `rklclass.admin` (or `<resource>.admin`) permission, and ESX / QBCore admin groups
+(`admin`, `superadmin`, `owner`, `god`).
+
+Players can only change their own things: their spell bar's layout and colours, their keys, their personal switches
+and their HUD look. None of that touches the spells or other players. A class leader manages the members of their own
+class only, and never anyone of their own rank or higher.
+
 ### Can I change the spells?
 
 Yes: damage, mana cost, cooldown, range, cast time, crowd control, the bar slot and the unlock rank in the in-game
