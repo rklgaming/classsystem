@@ -33,11 +33,19 @@
 | The rite finishes but the player stays down | `Config.Revive.system` calls the wrong script (or an event your version renamed): set `system` to your script, use `'custom'` with its revive event, or edit `PriestServerOpen.RevivePlayer` in `server/server_open.lua`. `Config.Debug = true` shows which system `'auto'` picked. |
 | "Not down" when the player clearly is | The server's check `PriestServerOpen.IsPlayerDead` does not know your script: edit it in `server/server_open.lua`, or add the state bag key to `Config.Revive.deadBags`. |
 | No XP from monsters | XP for kills needs rklspawnmonster; spell XP only counts hits on other players (2 XP, capped per minute). |
+| `/mockfight` says *"No room here"* | Both fighters need flat, dry ground in front of you: stand on open ground, on foot, facing open space (not water, stairs or a steep slope). |
+| *"Another mock fight is too close"* or *"Too many mock fights"* | Fights keep 70 m apart and at most 3 run at once (`Config.MockFight.MinDistance`, `MaxActive`). Move away or wait. |
+| *"... is not running on this server"* or *"... has no showcase yet"* | That class's resource is stopped, or it is older than class core 3.2.7 (no `config_preview.lua`): start or update the class. |
+| The mock fight ends early | The player who started it walked more than 90 m away (`Config.MockFight.LeaveRange`), left, or typed `/mockfight stop`. |
+| `/mockbattle` says it is switched off | Since rklui 3.1.0 the PvP mock battle is off by default; the spell showcase is `/mockfight`. To bring the battle back: `Config.MockBattle.Enabled = true` in `rklui/config_mana.lua`. |
 
 ## Testing alone
 
 `Config.HurtCasterForTesting = true` makes every spell hit its own caster too (aim at your own feet). Turn it off again
 before going live.
+
+To see every spell of two classes without a second player, type `/mockfight <class> <class>` (rklui), for example
+`/mockfight demon elf`.
 
 ## Support
 

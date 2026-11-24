@@ -14,10 +14,10 @@ at level 30 who tries the elf starts the elf at level 1 and is still level 30 wh
    | a spell that the server saw land on another player | 2 XP | at most 60 XP a minute; the same victim again only after 30 s |
    | a monster kill (`rklspawnmonster`) | 25 XP | every credited player |
    | a boss kill | +200 XP | on top of the monster kill |
-   | a mock battle round (rklui) | 10 XP each fighter, +50 XP the winner | rounds per hour are capped |
+   | a PvP mock battle round (rklui) | 10 XP each fighter, +50 XP the winner | only while rklui's `Config.MockBattle.Enabled = true` (off by default); rounds per hour are capped |
 
    Protected or dead players give nothing. The caps follow the character (a relog keeps them). Any source with
-   `xp = 0` is off.
+   `xp = 0` is off. The `/mockfight` spell showcase never gives XP.
 2. **Levels** go from 1 to 50 (`maxLevel`). XP from level L to L + 1 = `floor(100 * L ^ 1.5)` (`curve`): level 1 needs
    100, level 10 needs 3,162, level 49 needs 34,300.
 3. **Skill points**: one per level (`pointsPerLevel`).

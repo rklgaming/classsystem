@@ -77,6 +77,40 @@ the shipped value with a reset button. **Save** applies at once for every player
   Settings tab.
 - `Config.Boss.Enabled = false` removes the hall (the rank ladder still works).
 
+### The showcase look (`config_preview.lua`)
+
+Every class also has an open `config_preview.lua` (class core 3.2.7): how the class looks and fights in a `/mockfight`
+spell showcase. It never changes the real spells, and nothing in it runs without rklui.
+
+| Key | What it does |
+|---|---|
+| `Config.Preview.Enabled` | `false` = this class plays no spells in a showcase (only their names show) |
+| `fighter` | the fighter: ped `model`, `fallback` model and `scale`; freemode peds also take `components`, `props`, `headBlend`, hair and eye colour |
+| `dash` | the class dash, shown once more on top of the spells |
+| `spells.<key>` | one row per spell: `skip` (never shown), `kind` (`attack` / `support` / `dash` / `ult`), `dmg` / `heal` (how far the showcase HP bar moves), `hitMs`, `showMs`, `castTimeScale`, `move` |
+| `MaxCasts`, `MaxFights`, `MaxShowcaseMs`, `Shake` | how many showcase casts and fights of this class one player draws at once, the time limit, camera shake on / off |
+
+## The spell showcase (`rklui/config_mana.lua`)
+
+`/mockfight <class> <class>` is set up in `Config.MockFight`. Restart `rklui` after a change.
+
+| Key | Default | What it does |
+|---|---|---|
+| `Config.MockFight.Enabled` | `true` | `false` = `/mockfight` is off |
+| `Config.MockFight.Command` | `'mockfight'` | the command name |
+| `Config.MockFight.Who` | `'everyone'` | who may start one: `'everyone'`, `'class'` (players who hold a class), `'ace'` (`AcePermission`, default `rklui.mockfight`) or `'admin'`; admins always may |
+| `Config.MockFight.CooldownMs` | `45000` | per player, from the end of their last fight |
+| `Config.MockFight.MaxActive` | `3` | fights on the whole server at once |
+| `Config.MockFight.MinDistance` | `70.0` | a new fight must be this far (m) from every running one |
+| `Config.MockFight.ViewRange` | `60.0` | players this close see the fight; players who walk in later get it too |
+| `Config.MockFight.LeaveRange` | `90.0` | the player who started it goes this far away (or leaves) = the fight ends |
+| `Config.MockFight.MaxDurationMs` | `180000` | the longest one fight may take (the casts are squeezed to fit) |
+| `Config.MockFight.Fighters` | `{}` | a fighter look per class, e.g. `elf = { model = 'mp_f_freemode_01' }`; wins over the class's `config_preview.lua` |
+| `Config.MockFight.Aliases` | | more names players may type, e.g. `wolf = 'werewolf'`, `fox = 'kitsune'` |
+| `Config.MockBattle.Enabled` | `false` | the older PvP mock battle (`/mockbattle` duels and rings, `/mockstats`); `true` brings it back |
+
+The texts (`mf_...`) are in `rklui/locales/en.lua` and `tl.lua`.
+
 ## The species screen (`rklselectspecies/config.lua`)
 
 | Key | Default | What it does |

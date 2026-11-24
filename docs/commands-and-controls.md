@@ -81,7 +81,7 @@ card answers with `Y` (accept) or `N` (decline).
 
 The level commands are shared by every class: the class the target player is in answers them.
 
-## rklui: HUD, mana and mock battles
+## rklui: HUD, mana and the spell showcase
 
 | Command | What it does |
 |---|---|
@@ -89,13 +89,26 @@ The level commands are shared by every class: the class the target player is in 
 | `/rest` | sit down and regenerate |
 | `/mana` | your mana pool |
 | `/buffs` | the detail panel of your buffs, debuffs, statuses and marks |
-| `/mockbattle <id>` | challenge a nearby player to a non-lethal duel (`accept` / `decline`) |
-| `/mockbattle ring` / `join <hostId>` / `start` / `leave` | a free-for-all ring of up to 8 players |
-| `/mockstats` | your mock battle record and the class table |
+| `/mockfight <class> <class>` | the spell showcase: two NPC fighters show every spell of their class, e.g. `/mockfight demon elf` |
+| `/mockfight list` | the class names you can type |
+| `/mockfight stop` | end your mock fight at once (admins: the one nearest to them, whoever started it) |
 | `/hidehud` | hide or show the whole UI, every class bar included |
 | `/setmana <id> <value \| max>` | admin: set a player's mana pool |
 | `/classes` | admin: the registered classes and the players online per class |
-| `/mockbattle stop <hostId>` | admin: stop a battle |
 
-A mock battle is non-lethal: fighters are healed and refilled at the start, cannot drop below a knock-out threshold,
-and outsiders cannot hit them. Wins, losses and KOs are kept per player and per class (`/mockstats`).
+### The mock fight (spell showcase)
+
+A mock fight is a show, not a fight between players. Two NPC fighters appear about 7 m in front of you and cast every
+spell of their class at each other with the real spell effects and sounds: the class dash too, the ultimates
+last. HP bars and the name of each spell show on screen, and one fighter wins. It is harmless: nobody takes damage and
+it gives no XP, mana or loot. Every player within 60 m sees the same fight, also players who walk up later.
+
+- Class names: `gods`, `demon`, `merfolk`, `vampire`, `werewolf`, `fairy`, `witch`, `elf`, `archer`, `kitsune`,
+  `priest`, `assassin` (also `god`, `mermaid`, `vamp`, `wolf`, `fae`, `fox`, `healer`, `rogue` and the resource names).
+- Stand on open, flat ground, on foot, facing open space. The fight ends by itself, with `/mockfight stop`, or when you
+  walk away (90 m).
+- One fight per player, 45 s between two, at most 3 on the server at once, 70 m apart. Who may start one and every
+  limit are in `Config.MockFight` ([Configuration](configuration.md#the-spell-showcase-rkluiconfig_manalua)).
+
+The older PvP **mock battle** (player duels and rings with `/mockbattle`, `/mockstats`) is still inside rklui but
+switched off (`Config.MockBattle.Enabled = false`); `/mockbattle` answers that it is off.

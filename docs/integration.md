@@ -168,7 +168,7 @@ get-up where the player lies, `standaloneHealth` 150).
 
 What the server checks before and after the channel: the priest holds the class and is alive, the cooldowns (hers 60 s;
 the same body 30 s for any priest), the same routing bucket, the distance on server positions, that the target is
-really down, that nobody else is raising that body, no mock battle, and the Faith cost. `RevivePlayer` runs exactly once
+really down, that nobody else is raising that body, no PvP mock battle (when that rklui toggle is on), and the Faith cost. `RevivePlayer` runs exactly once
 per rite; a stopped or missing ambulance script only fails the rite (the Faith goes back), never the class.
 
 **Heals.** The God and the Priest are the healing classes. Priest heals are capped on the server: one heal at most 35,
@@ -221,6 +221,12 @@ end)
 
 With rklui running (`Config.Rklmana.resource = 'rklui'`, the default), every class shares one server-checked mana pool, statuses (a
 stun from any class blocks casting in every class), shields, elements and reactions, marks, cross-class buffs and one
-move-speed arbiter, and players can fight non-lethal mock battles. Each part has its own switch in `Config.Rklmana`;
+move-speed arbiter, and `/mockfight` shows the spells of any two classes. Each part has its own switch in `Config.Rklmana`;
 `Enabled = false` keeps a class fully standalone. Nothing breaks when rklui is stopped. rklui's own exports
-(`exports.rklui`, mana, buffs, mock battle) are listed in the README inside the rklui folder.
+(`exports.rklui`, mana, buffs, mock fight) are listed in the README inside the rklui folder.
+
+**The spell showcase (class core 3.2.7).** For `/mockfight` each class gives rklui its spell list (`PreviewKit`, server)
+and plays showcase casts on two local NPC fighters (`PreviewCast`, client). A showcase cast runs in a sandbox: no
+server events, no damage, mana, XP or statuses, nothing on the real player. It only fires the local client event
+`rklclass:client:previewHit` when a spell reaches the target fighter. `exports.rklui:InMockFight()` (client) tells
+whether a mock fight is drawn for this player right now.

@@ -55,8 +55,8 @@ Yes. Every text is in `language.lua` (English and Tagalog included); add your ow
 ### Can I edit the code?
 
 The resources are protected by the Cfx.re asset escrow. These files stay open: `config.lua`, `language.lua`,
-`client/client_open.lua`, `server/server_open.lua` and the passive files - the places you need to connect your own
-framework, ambulance script or economy.
+`client/client_open.lua`, `server/server_open.lua`, `config_preview.lua` (the showcase look) and the passive files - the
+places you need to connect your own framework, ambulance script or economy.
 
 ### Is PvP fair?
 
@@ -75,8 +75,14 @@ players automatically ([How-to](how-to.md#show-the-species-screen-to-new-players
 
 ### Do I need rklui?
 
-It is included and recommended: one shared mana pool for every class, the fantasy HUD, buffs and mock battles. The
-classes also run without it, each on its own mana.
+It is included and recommended: one shared mana pool for every class, the fantasy HUD, buffs and the `/mockfight`
+spell showcase. The classes also run without it, each on its own mana.
+
+### Can players see a class's spells before they pick it?
+
+Yes: `/mockfight <class> <class>` (rklui), for example `/mockfight demon elf`. Two NPC fighters cast every spell of
+their class at each other, with HP bars and a winner. It is a show only: no damage, no XP, and players near it see it
+too. Who may start one is set in `Config.MockFight.Who` ([How-to](how-to.md#choose-who-may-start-a-mock-fight)).
 
 ### Where do player levels and classes live?
 
@@ -123,6 +129,7 @@ server console.
 | **Editor** | the hall tab where admins change spells in game |
 | **Mana** | what spells cost; every class names it (Grace, Rage, Faith ...) |
 | **Passive** | a class power that is always on (no button) |
+| **Mock fight** | `/mockfight`: two NPC fighters show every spell of two classes; a harmless show, no damage or XP |
 | **Quick ability** | the extra spell on <kbd>B</kbd> |
 | **Cooldown** | the waiting time before a spell can be cast again |
 | **Crowd control** | stun, root, slow, charm, sleep ... effects that stop or slow a player |

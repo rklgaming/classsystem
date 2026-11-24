@@ -14,7 +14,8 @@ sold on our Tebex store and are not part of this repository.
 | **Classes** | God · Demon · Merfolk · Vampire · Werewolf · Fairy · Witch · Elf · Archer · Kitsune · Priest · Assassin |
 | **Spells** | 128 (ten per class + eight quick abilities) and twelve passives; the Priest also raises fallen players (works with your ambulance script) |
 | **Progression** | ten ranks per class (the class hall) + levels 1-50 with skill points and spell ranks |
-| **HUD + mana** | `rklui`: health and mana orbs, one shared server-checked mana pool, buffs, mock battles |
+| **HUD + mana** | `rklui`: health and mana orbs, one shared server-checked mana pool, buffs |
+| **Spell showcase** | `/mockfight demon elf`: two NPC fighters cast every spell of their class at each other, with HP bars and a winner; harmless, everyone near sees it |
 | **Frameworks** | ESX Legacy, QBCore, Qbox (auto-detected) or standalone through ACE |
 | **Needs** | ox_lib, oxmysql, OneSync |
 
@@ -27,11 +28,11 @@ first spell, step by step.
 |---|---|
 | [Getting started](docs/getting-started.md) | for beginners: download, folders, `server.cfg`, admin rights, first test - no coding |
 | [How-to](docs/how-to.md) | every admin job step by step: give classes, change spells, levels, the hall, languages, the Priest's revive, updates |
-| [Player guide](docs/player-guide.md) | for your players: pick a class, cast, the bar, levels, the hall, mock battles |
+| [Player guide](docs/player-guide.md) | for your players: pick a class, cast, the bar, levels, the hall, the `/mockfight` spell showcase |
 | [FAQ and glossary](docs/faq.md) | common questions and every word explained |
 | [Installation](docs/installation.md) | requirements, folders, `ensure` order, permissions, the database tables, the first class |
 | [Commands and controls](docs/commands-and-controls.md) | how players pick, cast and level a class; every command and keybind |
-| [Configuration](docs/configuration.md) | the `config.lua` of a class, section by section, and the species screen's config |
+| [Configuration](docs/configuration.md) | the `config.lua` of a class, section by section, the showcase look (`config_preview.lua`), `/mockfight` and the species screen's config |
 | [Levels and spell ranks](docs/levels.md) | XP, levels, skill points, spell ranks, respec, admin tools |
 | [The classes](docs/classes.md) | each class: its theme, mana, passive and spells in short |
 | [Integration and exports](docs/integration.md) | exports, events and state bags for your own scripts |

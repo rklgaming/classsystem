@@ -96,7 +96,7 @@ after pressing <kbd>T</kbd>.
 
 ### Level up my class
 
-1. Hit other players with your spells, defeat monsters and bosses, and fight mock battles: each gives XP.
+1. Hit other players with your spells and defeat monsters and bosses: each gives XP.
 2. The badge on your bar shows your level. Every level gives you a skill point.
 
 ### Rank up a spell
@@ -130,7 +130,7 @@ after pressing <kbd>T</kbd>.
 2. **Members**: promote, demote, set a rank or remove a member - even when they are offline.
 3. **Log**: every decision, who and when. **Settings**: the initiation ritual on or off.
 
-## Mana, buffs and mock battles
+## Mana, buffs and the spell showcase
 
 ### See my mana and buffs
 
@@ -141,15 +141,15 @@ after pressing <kbd>T</kbd>.
 
 1. Type `/hudsettings`: essence, metal frame, size, position, numbers and effects.
 
-### Fight a mock battle (a friendly duel)
+### Watch two classes show their spells (mock fight)
 
-1. `/mockbattle <id>` challenges a player near you; they type `/mockbattle accept`.
-2. Nobody dies: a knock-out only ends your round, and everyone is healed after.
+1. Stand on open, flat ground and type `/mockfight <class> <class>`, for example `/mockfight demon elf`.
+   `/mockfight list` shows the class names.
+2. Two fighters appear in front of you and cast every spell of their class at each other, with HP bars and the name
+   of each spell. One of them wins.
+3. It is only a show: nobody gets hurt and it gives no XP. Players near you see it too. `/mockfight stop` ends it.
 
-### Join a mock battle ring
-
-1. The host types `/mockbattle ring`. You type `/mockbattle join <host id>` (up to 8 players).
-2. The host types `/mockbattle start`. Last one standing wins. `/mockstats` shows your record.
+> **Tip:** a good way to see a class before you pick it. You can start the next one 45 seconds after the last ended.
 
 ## When something does not work
 

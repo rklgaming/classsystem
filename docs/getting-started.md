@@ -96,6 +96,9 @@ The admin commands (`/setclass`, the spell Editor, the level commands) only work
 > **Tip:** to test every spell at once, give yourself the top rank: in the txAdmin Live Console type
 > `setclass 1 vampire 9` (replace `1` with your server ID, shown in txAdmin's player list).
 
+> **Tip:** to see every spell of two classes without a second player, type `/mockfight demon elf` in the chat: two
+> NPC fighters show their spells in front of you (harmless, no XP).
+
 ## What next?
 
 - Change spell numbers in game: [How-to → Spells](how-to.md#spells).

@@ -193,7 +193,8 @@ Class names for commands: `god`, `demon`, `merfolk`, `vampire`, `werewolf`, `fai
 1. In `config.lua`, `Config.Levels.xp`:
    - `spellHit = { xp = 2, perMinuteCap = 60 }` - a spell that hits another player
    - `monsterKill = { xp = 25 }`, `bossKill = { xp = 200 }` - with rklspawnmonster
-   - `mockRound = { xp = 10 }`, `mockWin = { xp = 50 }` - mock battles
+   - `mockRound = { xp = 10 }`, `mockWin = { xp = 50 }` - the PvP mock battle (only when it is switched on in rklui;
+     off by default). The `/mockfight` spell showcase gives no XP.
 2. Set `xp = 0` to turn a source off. Restart the class.
 
 ### Unlock spells by level instead of by rank
@@ -270,7 +271,7 @@ Class names for commands: `god`, `demon`, `merfolk`, `vampire`, `werewolf`, `fai
 
 1. Add to `server.cfg`: `add_ace group.admin rklarcher.boss allow` (one line per class: `<resource>.boss`).
 
-## Mana, HUD and mock battles (rklui)
+## Mana, HUD and the spell showcase (rklui)
 
 ### Use one shared mana pool for every class
 
@@ -294,11 +295,37 @@ Class names for commands: `god`, `demon`, `merfolk`, `vampire`, `werewolf`, `fai
 
 1. Type `/hidehud`. Type it again to show everything.
 
-### Run a mock battle event
+### Show the spells of two classes (mock fight)
 
-1. A host stands where the fight should be and types `/mockbattle ring`.
-2. Others type `/mockbattle join <host id>` (up to 8). The host types `/mockbattle start`.
-3. Admins can stop any battle: `/mockbattle stop <host id>`.
+1. Stand on open, flat ground, on foot, facing open space.
+2. Type `/mockfight demon elf` (any two classes; `/mockfight list` shows the names). Two NPC fighters appear in front of
+   you and cast every spell of their class at each other, with HP bars, the spell names and a winner.
+3. `/mockfight stop` ends it at once (admins: the one nearest to them). Everyone within 60 m sees the same fight;
+   nobody is hurt and nobody gets XP.
+
+### Choose who may start a mock fight
+
+1. In `rklui/config_mana.lua`, `Config.MockFight.Who`: `'everyone'` (default), `'class'` (only players who hold a
+   class), `'ace'` or `'admin'`. Admins may always.
+2. For `'ace'`, add to `server.cfg`: `add_ace group.vip rklui.mockfight allow`.
+3. The limits are next to it: `CooldownMs` (45 s per player), `MaxActive` (3 fights at once), `MinDistance` (70 m
+   between two fights), `ViewRange` (60 m). Restart `rklui`.
+
+### Change how a class's fighter looks in a mock fight
+
+1. Open the class's `config_preview.lua` and change the `fighter` row: the ped `model`, its `scale`, and for freemode
+   peds the clothes (`components`, `props`).
+2. Or set it in rklui for one class: `Config.MockFight.Fighters.elf = { model = 'mp_f_freemode_01' }` in
+   `rklui/config_mana.lua` (wins over the class's file).
+3. Restart the class (or `rklui`).
+
+### Turn the mock fight off, or bring back the PvP mock battle
+
+1. `/mockfight` off: `Config.MockFight.Enabled = false` in `rklui/config_mana.lua`. One class only:
+   `Config.Preview.Enabled = false` in its `config_preview.lua`.
+2. The older player-vs-player mock battle (`/mockbattle` duels and rings of up to 8, `/mockstats`) is still in rklui,
+   switched off. To use it, set `Config.MockBattle.Enabled = true` in `rklui/config_mana.lua`.
+3. Restart `rklui`.
 
 ### Turn off rklui's potions and crafting
 

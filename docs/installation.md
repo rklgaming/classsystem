@@ -36,7 +36,7 @@
   rklpriest/        Priest
   rklassassin/      Assassin
 rklselectspecies/   the species selection screen
-rklui/              the fantasy HUD + the shared class mana and class network + mock battles
+rklui/              the fantasy HUD + the shared class mana and class network + the /mockfight spell showcase
 ```
 
 Every class is a complete resource on its own: its spells, icons, models, particles and sounds are inside its own
@@ -47,7 +47,7 @@ folder. You can run all twelve or only the ones you want.
 | Part | What it is |
 |---|---|
 | Hud | the fantasy vitals HUD: health and mana orbs, stamina / breath, hunger and thirst, `/hudsettings`, `/rest` |
-| Mana | one server-checked mana pool shared by every class + the class network (statuses, shields, marks, elements and reactions, cross-class buffs, one move-speed arbiter) + mock battles |
+| Mana | one server-checked mana pool shared by every class + the class network (statuses, shields, marks, elements and reactions, cross-class buffs, one move-speed arbiter) + the `/mockfight` spell showcase (the PvP mock battle is in it too, switched off) |
 | Stat | potions, crafting and item effects for ESX + ox_inventory; switch it off (`Stat = false`) if you do not use it |
 
 Without rklui every class runs alone on its own mana pool (armour by default). If you keep rklui started but turn its
@@ -73,7 +73,7 @@ Mana part off, set `Config.Rklmana.Enabled = false` in each class.
 
    ```cfg
    add_ace group.admin rklclass.admin allow             # /setclass, the spell editor, the level commands (every class)
-   add_ace group.admin rklmana.admin allow              # rklui: /setmana, /classes, /manadebug, stopping a mock battle
+   add_ace group.admin rklmana.admin allow              # rklui: /setmana, /classes, /manadebug, stopping anyone's mock fight
    add_ace group.admin rklselectspecies.admin allow     # admin-only species, cooldown bypass, /resetspecies
    ```
 
