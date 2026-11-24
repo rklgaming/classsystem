@@ -26,6 +26,7 @@ Discord webhook goes in `server/server_open.lua`).
 | `Config.SyncDistance`, `Config.RoutingBuckets` | how far others see your spells; spells stay inside a routing bucket |
 | `Config.Keys` | the ten slot keys (`1`-`0`) |
 | `Config.Targeting`, `Config.Protection`, `Config.Damage` | who spells may hit (players, NPCs, vehicles), spawn protection, damage rules |
+| `Config.DashGround` | (class core 3.2.9) every dash, leap, lunge and blink follows the floor on slopes, stairs, bridges and indoors, stops at walls and never ends under the floor; `Enabled = false` = the old straight-line dashes |
 | `Config.Status` | crowd control kinds (root, slow, stun, blind, fear, lift, silence ...) with immunity and cleanse rules |
 | `Config.Healing` | the healing classes are the **God** and the **Priest**; every other class keeps only HP gained by attacking |
 | `Config.Buffs` | power, ward, protect, haste, focus, slow, weaken: used when rklui is not running |

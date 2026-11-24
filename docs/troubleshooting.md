@@ -21,6 +21,8 @@
 | oxmysql says it cannot connect | Your database line (`set mysql_connection_string ...`) in `server.cfg` is missing or wrong. txAdmin recipes add it for you; check the user, password and database name. |
 | Nothing happens, no errors | The folders were renamed, or `ensure [class]` is missing. Keep the folder names exactly as shipped. |
 | A player cannot cast anything | They hold no class, or a different one: check `Player(id).state['rkl:class']`, give one with `/setclass`. Spells also need **right mouse held** while pressing `1`-`0` (`Config.Casting.requireAim`). |
+| The quick ability does nothing on `B` | Since class core 3.2.9 it is on `G`. Players can pick any key under **Settings > Key Bindings > FiveM** (listed as *Class: spell*); a different default for everyone is `key = '...'` in that spell's block in `config.lua`. |
+| A dash, leap or blink ends inside a slope or under the floor | Update the class to class core 3.2.9 or later and check that `Config.DashGround.Enabled` is `true` in its `config.lua`. |
 | A slot shows chains | The spell is locked by rank (the tooltip names the rank it needs). Promote the player in the hall, or change `Config.SpellLadder`. |
 | "Your mana is still loading" | rklui has not built the player's pool yet (right after joining or a rklui restart); try again a moment later. |
 | `/setclass` says no permission | Add `add_ace group.admin rklclass.admin allow` and put your account in `group.admin`, or run it from the server console. |

@@ -41,7 +41,7 @@ after pressing <kbd>T</kbd>.
 
 ### Use my quick ability
 
-1. Press <kbd>B</kbd> - no aiming needed.
+1. Press <kbd>G</kbd> - no aiming needed (it was <kbd>B</kbd> before the class update of November 2026).
 2. Vampire Shadow Dash, Fairy Fae Step, Witch Hex Mirror, Elf Sylvan Veil, Archer Roll Shot, Kitsune Spirit Fox Step,
    Priest Sacred Step, Assassin Shade Step. It unlocks at rank 5.
 
@@ -84,7 +84,8 @@ after pressing <kbd>T</kbd>.
 ### Change my keys
 
 1. Open **Settings → Key Bindings → FiveM**.
-2. Search your class name and set new keys for the slots, the quick ability, the bar toggle or the hall.
+2. Search your class name and set new keys for the slots, the quick ability, the bar toggle or the hall. The quick
+   ability is listed as *Class: spell*, for example *Vampire: Shadow Dash*.
 
 ### Turn my class's extras on or off
 

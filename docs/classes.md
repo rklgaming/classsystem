@@ -2,7 +2,7 @@
 
 [Back to the overview](../README.md)
 
-Ten spells per class on slots `1`-`0` (slot 10 = key `0`), plus a quick ability on `B` for eight classes. Every class has
+Ten spells per class on slots `1`-`0` (slot 10 = key `0`), plus a quick ability on `G` for eight classes (`B` before class core 3.2.9). Every class has
 a passive that is always on, its own mana and ten ranks. The God and the Priest heal; every other class keeps only the HP it
 gains by attacking.
 
@@ -96,7 +96,7 @@ vampire from the damage its spells really dealt.
 
 | Slot | Spell | In short |
 |---|---|---|
-| B | Shadow Dash | turn to smoke and reappear up to 18 m away |
+| G | Shadow Dash | turn to smoke and reappear up to 18 m away |
 | 1 | Throw Spear | a blood-iron spear: knockdown and bleed |
 | 2 | Blood Wave | a wave of blood that cuts, then bursts in a geyser |
 | 3 | Blood Rain | crimson streaks fall on an 8 m circle |
@@ -138,7 +138,7 @@ Full Bloom makes the next spell cost half and hit harder.
 
 | Slot | Spell | In short |
 |---|---|---|
-| B | Fae Step | a petal blink of 7 m |
+| G | Fae Step | a petal blink of 7 m |
 | 1 | Bramble Bloom | a fae seed grows into a bursting bramble (knockdown, slow) |
 | 2 | Petal Storm | a column of razor petals rolls away (blind) |
 | 3 | Sporeling Trap | three mushroom traps that burst when someone comes near |
@@ -159,7 +159,7 @@ doomed target sets off Malediction: damage, silence and mana burned. Half of eve
 
 | Slot | Spell | In short |
 |---|---|---|
-| B | Hex Mirror | reflect spell damage for you or an ally |
+| G | Hex Mirror | reflect spell damage for you or an ally |
 | 1 | Murder of Crows | nine crows wheel over the mark |
 | 2 | Witch's Mark | a brand: the target takes more from every class |
 | 3 | Shadow Step | come apart into crows and reform up to 22 m away |
@@ -180,7 +180,7 @@ fire + wind = Firestorm, ice + earth = Shatter, fire + ice = Steam.
 
 | Slot | Spell | In short |
 |---|---|---|
-| B | Sylvan Veil | fade into leaves: faster, the next spell hits harder |
+| G | Sylvan Veil | fade into leaves: faster, the next spell hits harder |
 | 1 | Ember Lance | a spear of fire (burn) |
 | 2 | Tidal Ring | a ring of water that shoves and soaks |
 | 3 | Tempest Dance | glide 10 m on a whirlwind |
@@ -202,7 +202,7 @@ arrows: trick shots, nets, traps and arrow storms, no magic look.
 
 | Slot | Spell | In short |
 |---|---|---|
-| B | Roll Shot | a backward roll that looses one arrow |
+| G | Roll Shot | a backward roll that looses one arrow |
 | 1 | Piercing Shot | hold to draw: a heavy arrow through 2 bodies |
 | 2 | Fan Volley | 5 arrows in a fan (slow) |
 | 3 | Snare Shot | a net arrow that roots |
@@ -223,7 +223,7 @@ dash or a swap the next spell needs no cast time.
 
 | Slot | Spell | In short |
 |---|---|---|
-| B | Spirit Fox Step | a foxfire dash of 8 m |
+| G | Spirit Fox Step | a foxfire dash of 8 m |
 | 1 | Kitsune-bi | three homing foxfire wisps |
 | 2 | Fox Mirage | three copies of herself run off; hitting one bursts it |
 | 3 | Foxfire Lash | a fox-mask sigil fires 9 bolts in a fan |
@@ -247,7 +247,7 @@ Smite and Holy Nova hits charge Zeal for a stronger Mending Light. Her heals are
 
 | Slot | Spell | In short |
 |---|---|---|
-| B | Sacred Step | an 8 m glide-step of light |
+| G | Sacred Step | an 8 m glide-step of light |
 | 1 | Mending Light | heals the ally under your aim (22 HP), or yourself |
 | 2 | Smite | a lance of holy light at the foe under your aim |
 | 3 | Aegis of Faith | a dome of light that absorbs 35 spell damage |
@@ -270,7 +270,7 @@ and vial stack Venom on a foe (up to 3, 2 HP a second per stack); a backstab giv
 
 | Slot | Spell | In short |
 |---|---|---|
-| B | Shade Step | a 7 m low dash that keeps you hidden |
+| G | Shade Step | a 7 m low dash that keeps you hidden |
 | 1 | Twin Fang | two quick stabs that add Venom; at 3 Venom the next stab ruptures it |
 | 2 | Nightshade Knives | three throwing knives in a fan |
 | 3 | Venom Vial | a poison cloud at your mark |

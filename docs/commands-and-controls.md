@@ -26,12 +26,13 @@ where you left off.
 | **`E`** | cast a targeted spell at the ground marker |
 | **Backspace** or **right mouse** again | cancel the aim; Backspace also cancels a cast bar |
 | the same slot again | end, land or detonate a spell that keeps running (it glows on the bar) |
-| **`B`** | the quick ability (Vampire, Fairy, Witch, Elf, Archer, Kitsune, Priest, Assassin) |
+| **`G`** | the quick ability (Vampire, Fairy, Witch, Elf, Archer, Kitsune, Priest, Assassin); `B` before class core 3.2.9 |
 
 - **Direct** spells go off at once. **Targeted** spells show a ground marker (red = out of range) and sometimes a
   preview of the area; nothing locks on: the spell lands where you aimed and the server decides who stood there.
 - Getting knocked down, stunned or hit hard during a cast bar breaks the cast (no cost, no cooldown).
-- Every key is rebindable: **Settings > Key Bindings > FiveM**, search the class name.
+- Every key is rebindable: **Settings > Key Bindings > FiveM**, search the class name. The quick ability is listed
+  as *Class: spell*, for example *Vampire: Shadow Dash*.
 
 ### Class-specific keys
 

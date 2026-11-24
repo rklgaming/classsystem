@@ -37,6 +37,7 @@ first spell, step by step.
 | [The classes](docs/classes.md) | each class: its theme, mana, passive and spells in short |
 | [Integration and exports](docs/integration.md) | exports, events and state bags for your own scripts |
 | [Troubleshooting](docs/troubleshooting.md) | common problems and how to get support |
+| [What's new](docs/changelog.md) | the latest changes and the current version of every class |
 
 ## Quick start
 

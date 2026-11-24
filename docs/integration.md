@@ -103,7 +103,7 @@ Each class README (inside the resource) lists the rest of its own exports and st
 
 A priest walks up to a fallen player: **`[E] Rite of Resurrection`** shows over the body. One press of `E`: she kneels, a
 5 s cast bar runs, then the **server** checks everything again and calls **your** revive / ambulance system. It is not a
-bar spell (the bar keeps its 10 spells + `B`).
+bar spell (the bar keeps its 10 spells + `G`).
 
 **Pick the system** in `rklpriest/config.lua`:
 

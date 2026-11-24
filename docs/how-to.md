@@ -143,6 +143,8 @@ Class names for commands: `god`, `demon`, `merfolk`, `vampire`, `werewolf`, `fai
 
 1. In `config.lua`: `Config.Keys = { '1', '2', '3', '4', '5', '6', '7', '8', '9', '0' }` - change the keys you want.
 2. Restart the class. Players who already set their own keys keep theirs.
+3. The quick ability has its own key in its `Config.Spells` block: `slot = 0, key = 'G'`. A new default letter
+   reaches every player, even those who had bound the old one.
 
 > **Tip:** players can always change keys themselves: **Settings → Key Bindings → FiveM** → search the class name.
 

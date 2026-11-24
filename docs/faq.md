@@ -130,7 +130,7 @@ server console.
 | **Mana** | what spells cost; every class names it (Grace, Rage, Faith ...) |
 | **Passive** | a class power that is always on (no button) |
 | **Mock fight** | `/mockfight`: two NPC fighters show every spell of two classes; a harmless show, no damage or XP |
-| **Quick ability** | the extra spell on <kbd>B</kbd> |
+| **Quick ability** | the extra spell on <kbd>G</kbd> (<kbd>B</kbd> before class core 3.2.9) |
 | **Cooldown** | the waiting time before a spell can be cast again |
 | **Crowd control** | stun, root, slow, charm, sleep ... effects that stop or slow a player |
 | **Routing bucket** | an instance (apartment, private world); spells stay inside it |
