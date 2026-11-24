@@ -43,7 +43,7 @@ where you left off.
 | Demon | Ascension of the Demon Lord | `E` Hellmaw (fire breath), `G` Abyssal Stomp, `0` ends the form |
 | Demon | Hellwhip | `E` lashes, the slot again drops the whip |
 | Merfolk | Trident of the Deep | `E` hurls, the slot again recalls it, `X` lets it dissolve |
-| Vampire | Throw Spear / Sword Dance | `E` throws; Sword Dance: `G` throws every sword left |
+| Vampire | Throw Spear / Sword Dance | `E` throws; Sword Dance: `G` throws every sword left (while the swords wait, `G` does not Shadow Dash) |
 | Werewolf | Call of the Pack | hold right mouse + `E` sends a wolf to the ring under your aim; right mouse + `5` again sends every wolf left |
 | Fairy | Wildwood Barrage | `E` hurls a sapling |
 | Witch | Smoke Form | `W A S D` drift, `Left Ctrl` rise, `Space` sink, `Shift` surge, `9` reforms |

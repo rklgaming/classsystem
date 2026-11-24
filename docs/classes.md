@@ -104,7 +104,7 @@ vampire from the damage its spells really dealt.
 | 5 | Sword Circle | five blood blades orbit and cut |
 | 6 | Blood Rush | speed and endless stamina |
 | 7 | Summon Bats | a swarm of bats bites and blinds |
-| 8 | Sword Dance | nine swords; `E` throws one, `G` throws all |
+| 8 | Sword Dance | nine swords; `E` throws one, `G` throws all (no Shadow Dash while they wait) |
 | 9 | Vampiric Embrace | a lunge and a real bite: stun and drain |
 | 10 | Crimson Eruption | ultimate: a blood moon pulls everyone in, then erupts |
 

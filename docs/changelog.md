@@ -13,6 +13,7 @@ inside its resource.
 - **The quick ability moved from `B` to `G`** in the eight classes that have one (Vampire, Fairy, Witch, Elf, Archer,
   Kitsune, Priest, Assassin), because `B` is often taken by other scripts. Every player gets `G`, even those who had
   bound the old key; anyone can pick another key under **Settings > Key Bindings > FiveM** (listed as *Class: spell*).
+- **Vampire 1.2.2:** while Sword Dance's swords wait, `G` throws them all; Shadow Dash works again once they are gone.
 
 ## Class core 3.2.8 (November 2026)
 
@@ -32,7 +33,7 @@ inside its resource.
 | `rklgods` (God) | 1.3.1 |
 | `rkldemon` (Demon) | 1.3.1 |
 | `rklmerfolk` (Merfolk) | 1.2.1 |
-| `rklvampire` (Vampire) | 1.2.1 |
+| `rklvampire` (Vampire) | 1.2.2 |
 | `rklwerewolf` (Werewolf) | 1.2.1 |
 | `rklfairyspells` (Fairy) | 1.2.1 |
 | `rklwitchspells` (Witch) | 1.2.1 |
