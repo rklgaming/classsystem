@@ -3,7 +3,7 @@
 Twenty fantasy classes for FiveM, each with ten spells, a passive and its own class hall, plus class levels 1-50 with
 spell ranks, an in-game species selection screen and a fantasy HUD with one shared mana pool for every class.
 
-**Interactive guide: https://rklgaming.github.io/classsystem/** - a task finder ("How do I...?"), the classes with their spells,
+**Interactive guide: https://rklgaming.github.io/classsystem/** - a task finder ("How do I...?"), every class with its spells,
 passive, ranks and real screenshots, a level / spell rank calculator, and every command, config section and export, searchable.
 
 This repository holds the **documentation only**: how to install, set up and use the Class System. The scripts are
