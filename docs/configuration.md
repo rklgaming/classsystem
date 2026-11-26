@@ -2,7 +2,7 @@
 
 [Back to the overview](../README.md)
 
-Every class has its own `config.lua`. All twelve are built on the same class core, so the sections below are the same in
+Every class has its own `config.lua`. All twenty are built on the same class core, so the sections below are the same in
 each one; only the class block, the passive and the spells differ. A feature you may not want is a switch
 (`Enabled = true / false`), never hard-wired. Texts live in `language.lua`, never in `config.lua`.
 
@@ -30,7 +30,7 @@ Discord webhook goes in `server/server_open.lua`).
 | `Config.Status` | crowd control kinds (root, slow, stun, blind, fear, lift, silence ...) with immunity and cleanse rules |
 | `Config.Healing` | the healing classes are the **God** and the **Priest**; every other class keeps only HP gained by attacking |
 | `Config.Buffs` | power, ward, protect, haste, focus, slow, weaken: used when rklui is not running |
-| `Config.UI` | the bar: saved layout, edit command (`/<class>bar`), hide / show key and button, theme accent, slot shape and size |
+| `Config.UI` | the bar: saved layout, edit command (`/<class>bar`), hide / show key and button, theme accent, slot shape and size; `Config.UI.personal` = the players' own switches (below) |
 | `Config.Ranks` | the names of the ten ranks (English + Tagalog) and their badge colour / icon |
 | `Config.SpellLadder` | which rank unlocks which bar slot (default: slots 1-2 at rank 1, then one per rank; quick abilities at rank 5) |
 | `Config.Boss` | the class hall: who is the leader, who may hire, invitations, rate limits, the initiation ritual, the log |
@@ -90,6 +90,71 @@ spell showcase. It never changes the real spells, and nothing in it runs without
 | `dash` | the class dash, shown once more on top of the spells |
 | `spells.<key>` | one row per spell: `skip` (never shown), `kind` (`attack` / `support` / `dash` / `ult`), `dmg` / `heal` (how far the showcase HP bar moves), `hitMs`, `showMs`, `castTimeScale`, `move` |
 | `MaxCasts`, `MaxFights`, `MaxShowcaseMs`, `Shake` | how many showcase casts and fights of this class one player draws at once, the time limit, camera shake on / off |
+
+### Worn and held gear
+
+Several classes wear or hold their own models: the Knight's sword and tower shield, the Oni's club, horned mask and
+gourd, the Samurai's katana and saya, the Shaman's mask and drum, the Alchemist's brass still and flasks, the Dragonkin's
+horns, scale mantle and wings, the Necromancer's bone staff and skull lantern, the Archer's bow and the Assassin's
+daggers. Every player in range sees them.
+
+Each piece is one row: `Enabled`, `model`, `bone`, the offset and `rot`.
+
+```lua
+swordWorn = { Enabled = true, model = 'kn_sword_hip', bone = 11816, offset = vector3(0.05, -0.03, -0.19), rot = vector3(0.0, 0.0, 0.0), rotOrder = 2 },
+```
+
+- **Server switch**: `Enabled = false` on a row hides that piece for everyone; the block's own `Enabled = false`
+  switches the class's worn gear off for the whole server.
+- **Players' switch**: each player turns their own worn gear on or off in the bar editor (`/<class>bar`); see
+  *Personal switches* below.
+- `bone` is a ped bone id (`11816` pelvis, `24818` upper back, `31086` head, `57005` right hand, `61163` left forearm).
+  The offset is in metres in that bone's own frame (bone frames are not Z-up). `rot` is in degrees, applied the way
+  `AttachEntityToEntity` does with rotation order 2: R = Rz(z) · Rx(x) · Ry(y), plain signs (measured in game). Most
+  worn models are built into their bone's frame, so their `rot` stays `0, 0, 0`.
+
+| Class | Gear rows | Offset key | Players' switches (`/<class>bar`) |
+|---|---|---|---|
+| Knight | `Config.Gear` | `offset` | worn sword and shield |
+| Oni | `Config.Kit.gear` | `pos` | horned mask (also `/onimask`), club on the back, gourd on the hip |
+| Samurai | `Config.Kit.gear` | `pos` | katana and saya (also `/katana`) |
+| Shaman | `Config.Gear` | `offset` | worn mask and drum |
+| Alchemist | `Config.Gear` | `offset` | worn still and vial belt |
+| Dragonkin | `Config.Kit.gear`, `Config.Kit.wings`, `Config.Kit.scales` | `pos` | folded wings, dragon horns, scale mantle |
+| Necromancer | `Config.Kit.gear` | `pos` | worn staff and lantern (or each on its own), lich mantle, the servants' bone dress |
+| Chronomancer | the spell rows (e.g. `hourglass` in `Config.Spells.hour_zero`) | `offset` | worn props (hourglasses, rings) |
+| Archer | `Config.Gear` | `offset` | bow on the back |
+| Assassin | `Config.Gear` | `offset` | daggers in hand |
+
+A few pieces belong to one spell and sit in that spell's block (the Chronomancer's hourglasses, the Necromancer's lich
+mantle); they use the same row format.
+
+### Personal switches (`Config.UI.personal`)
+
+Since class core 3.2.11 every class can give its players on / off switches of their own. They show in the bar editor
+(`/<class>bar`) and each player's choice is saved on their PC.
+
+```lua
+Config.UI.personal = {
+    { key = 'gear',  Enabled = true, default = true, label = 'ui_pref_gear',  note = 'ui_pref_gear_note' },
+    { key = 'shake', Enabled = true, default = true, label = 'ui_pref_shake', note = 'ui_pref_shake_note' },
+}
+```
+
+- `Enabled = false` hides a row; it then always uses its `default`.
+- `label` and `note` are keys in `language.lua`.
+- Your own scripts read a switch with `exports['<resource>']:GetPref(key)` ([Integration](integration.md)).
+
+### The Witch's wand (`Config.RequireWeapon`, rklwitchspells)
+
+| Key | Default | What it does |
+|---|---|---|
+| `Enabled` | `false` | `true` = the witch must hold one of `weapons` to start a spell; a running spell can always be recast or ended |
+| `weapons` | `{ 'weapon_wand', 'weapon_wand2' }` | weapon names as your weapons / inventory know them (case does not matter), or weapon hashes |
+| `label` | `'wand'` | what the *"Hold your ... to cast"* message calls it |
+| `quick` | `true` | the quick ability needs it too; `false` = only the bar slots |
+| `serverCheck` | `true` | the server checks the held weapon too (OneSync); `false` = the player's game only |
+| `lockonOff` | `true` | while she holds one, right mouse stays the spell button (GTA's own aim and lock-on stay off) |
 
 ## The spell showcase (`rklui/config_mana.lua`)
 

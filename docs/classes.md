@@ -2,7 +2,7 @@
 
 [Back to the overview](../README.md)
 
-Ten spells per class on slots `1`-`0` (slot 10 = key `0`), plus a quick ability on `G` for eight classes (`B` before class core 3.2.9). Every class has
+Ten spells per class on slots `1`-`0` (slot 10 = key `0`), plus a quick ability on `G` for sixteen classes (all but the God, Demon, Merfolk and Werewolf; `B` before class core 3.2.9). Every class has
 a passive that is always on, its own mana and ten ranks. The God and the Priest heal; every other class keeps only the HP it
 gains by attacking.
 
@@ -20,6 +20,14 @@ gains by attacking.
 | [Kitsune](#kitsune) | `rklkitsune` | `kitsune` | Spirit | Fox Trickery |
 | [Priest](#priest) | `rklpriest` | `priest` | Faith | Afterglow |
 | [Assassin](#assassin) | `rklassassin` | `assassin` | Cunning | Nightshade Edge |
+| [Knight](#knight) | `rklknight` | `knight` | Valor | Steadfast Wall |
+| [Oni](#oni) | `rkloni` | `oni` | Wrath | Bleeding Fury |
+| [Samurai](#samurai) | `rklsamurai` | `samurai` | Resolve | Iai |
+| [Shaman](#shaman) | `rklshaman` | `shaman` | Ancestry | Ancestral Chorus |
+| [Alchemist](#alchemist) | `rklalchemist` | `alchemist` | Catalyst | Volatile Hands |
+| [Dragonkin](#dragonkin) | `rkldragonkin` | `dragonkin` | Hoard | Dragon Scales |
+| [Necromancer](#necromancer) | `rklnecromancer` | `necromancer` | Marrow | Grave Tithe |
+| [Chronomancer](#chronomancer) | `rklchronomancer` | `chronomancer` | Sand | Tempo |
 
 ---
 
@@ -281,3 +289,188 @@ and vial stack Venom on a foe (up to 3, 2 HP a second per stack); a backstab giv
 | 8 | Crippling Cut | a sweep at the legs that slows |
 | 9 | Riposte | a 1 s guard; a blocked hit earns a counter-stab |
 | 10 | Coup de Grace | ultimate: seize a foe from behind and strike; executes the weakened |
+
+## Knight
+
+*The Bulwark* · guardian, melee, control · physical. Where the knight plants his feet the line holds: an arming sword
+in one hand, a tower shield on the other arm, walls of pavise shields raised out of the earth, a taunt that dares the
+enemy to come at him and a chain that ties him to a friend's wounds. He heals no one; he simply does not break.
+
+**Passive · Steadfast Wall**: while the shield is raised, hits from the front are blunted and knockdowns refused; every
+blocked hit gives Valor back. Standing still behind it braces him: harder to move, more Valor per block.
+
+| Slot | Spell | In short |
+|---|---|---|
+| G | Guard Step | a 3.5 m hop back behind the raised shield |
+| 1 | Shield Bash | a step-in bash that staggers the foe in front of you |
+| 2 | Cleaving Arc | a wide sweep that bites the two nearest foes in front of you |
+| 3 | Shield Charge | drive forward behind the shield; the first foe in your lane is knocked down |
+| 4 | Rally Banner | a banner at your mark: allies around it are warded and steadied, foes are challenged |
+| 5 | Taunting Shout | foes in front of you are challenged and weakened; nearby NPCs turn on you |
+| 6 | Iron Bulwark | kneel behind a steel shield wall: hits from the front are blunted, allies beside you are shielded |
+| 7 | Pommel Break | a hilt jab to the head that silences one foe |
+| 8 | Phalanx Line | a line of pavise shields rises at your mark and shoves back whoever touches it |
+| 9 | Oathbound | a steel chain to an ally: part of their wounds come to you, and they are warded while it holds |
+| 10 | Bastion of the Last Line | ultimate: a ring of pavises rises around you, then falls outward on your foes |
+
+## Oni
+
+*The Mountain Brute* · bruiser, melee, control · physical and earth. The brute of the old tales: a studded club, a
+horned mask and a sake gourd on the hip. Slow and heavy, and the more he bleeds the harder he hits: he throws people by
+the collar, cracks the earth into lanes, tears boulders out of the ground and splits a mountain in one blow.
+
+**Passive · Bleeding Fury**: below 60 % health his club hits deal +15 %, below 30 % +30 % and he cannot be knocked
+down. Wrath is a rage pool: it fills from damage taken and from club swings, never by itself.
+
+| Slot | Spell | In short |
+|---|---|---|
+| G | Lumbering Leap | a heavy 6 m hop; the landing trips everyone close by |
+| 1 | Crushing Swing | an overhead smash that cracks the ground; costs nothing and fills Wrath |
+| 2 | Fissure Swing | a crack runs along your aim, dirt spikes lift everyone on it |
+| 3 | Iron Grip | grab the foe in front of you by the collar and throw them along your aim |
+| 4 | Gourd of Fury | a long drink: more power and haste, but you take more damage |
+| 5 | Boulder Toss | rip a boulder from the ground and hurl it at your mark: a knockdown where it lands |
+| 6 | Horned Rush | a bull-rush along your aim that knocks down everyone in your path |
+| 7 | Earthshatter Spin | two sweeps of the club hit everyone around you twice and push them out |
+| 8 | Wrathful Roar | foes in a cone are weakened and shoved back; NPCs flee |
+| 9 | Blood Oath | cut your palm: lose health, gain Wrath; your next club hits bite deeper and bleed |
+| 10 | Mountain Splitter | ultimate: the club comes down and a canyon splits open along your aim |
+
+## Samurai
+
+*The Still Blade* · melee, burst, mobility · physical and wind. A swordsman of stillness: the hand rests on the hilt
+at the hip and nothing moves until it must. Then one draw-cut, a flash of silver, and the blade is home again. He parries
+and answers, names a foe for a duel and ends a fight with a single cut.
+
+**Passive · Iai**: every cut draws the blade for 4 s; sheathed for 2 s, the scabbard charges and the next Iaijutsu Draw
+reaches farther and cuts deeper. Damage taken while the blade is sheathed gives Resolve back.
+
+| Slot | Spell | In short |
+|---|---|---|
+| G | Wind Step | a low 7 m slide with the blade sheathed |
+| 1 | Iaijutsu Draw | a draw-cut: everyone on the line in front of you is cut a heartbeat later |
+| 2 | Rising Cut | an upward cut that lifts the foes in front of you off the ground |
+| 3 | Blade Dance | three slides in a zigzag along your aim, a cut at every turn |
+| 4 | Falling Petal | a downward cut; a lifted or airborne foe takes double and is knocked flat |
+| 5 | Parry Stance | a short guard; the first hit from a foe close by is answered with a draw-cut and Resolve back |
+| 6 | Mark of the Duel | name a foe: your cuts on them and their hits on you both bite harder |
+| 7 | Hundred Cuts | eight cuts in a breath, fanning out in front of you |
+| 8 | Severing Wind | a streak flies to your mark; a seam opens there and everyone on it is cut down |
+| 9 | Zanshin | for a few seconds you cut harder and move faster, and every cut gives Resolve back |
+| 10 | Moonless Night | ultimate: stand still, then one draw: everyone on a 12 m line falls together |
+
+## Shaman
+
+*The Totem Caller* · summoner, zone, support · earth and spirit. She plants carved totems that do the work - one burns,
+one binds, one wards her kin, one throws the dust - links them with lines of spirit smoke, calls spirit bison out of the
+ground and raises a great totem whose drum shakes the field. Any foe can break a totem; she simply plants another.
+
+**Passive · Ancestral Chorus**: every totem she has standing beats a drum and makes her spells stronger; near her own
+totem crowd control wears off sooner; a fallen totem gives Ancestry back. Up to 3 totems at once.
+
+| Slot | Spell | In short |
+|---|---|---|
+| G | Spirit Stride | an 8 m run as a trail of ancestor smoke |
+| 1 | Ember Totem | a totem that burns every foe around it |
+| 2 | Spirit Link | smoke lines between your totems hurt and mark foes who cross, and hasten allies |
+| 3 | Earthbind Totem | foes around it are slowed and cannot jump; the first to touch it is rooted |
+| 4 | Totemic Recall | your totems tear out of the ground and plant themselves around you |
+| 5 | Ancestor Totem | allies around it are warded and steadied |
+| 6 | Mask of the Ancestor | half-seen and faster for a few seconds; every totem beats twice as fast |
+| 7 | Gust Totem | every few seconds a dust wave shoves foes away |
+| 8 | Ancestral Stampede | three spirit bison thunder down the lane and knock foes flat |
+| 9 | Dust Devil | a whirling dust column hunts the nearest foes and lifts whoever it touches |
+| 10 | Totem of the Great Spirit | ultimate: a 6 m totem whose drum pushes foes out and strengthens allies, then it falls |
+
+## Alchemist
+
+*The Flask Master* · zone, control, support · venom (acid), fire and ice. A brewer-engineer who turns the battlefield
+into a lab: flasks whose puddles react where they meet, floors turned to ice, tar or coals, a brass still on her back, a
+homunculus that drinks what she spills and a great work that turns a circle of the field to gold.
+
+**Passive · Volatile Hands**: every third flask is unstable and splashes wider; her own puddles never hurt her; the still
+on her back brews one free Elixir every 30 s. At most four puddles at once. Two puddle kinds that meet react: steam, a
+flash-burn or a brittle crack.
+
+| Slot | Spell | In short |
+|---|---|---|
+| G | Glass Slide | smash a frost flask and slide 7 m on the ice; the strip trips runners for a moment |
+| 1 | Load Reagent | draw the next flask: acid, frost or ember (everyone sees which one you hold) |
+| 2 | Flask Toss | the loaded flask shatters into a puddle of acid, frost or ember |
+| 3 | Transmute Floor | a circle of ground turns to glass-ice, tar or coals, by the reagent you hold |
+| 4 | Homunculus | a brass-and-glass creature walks to your foe, drinks a puddle on the way and bursts |
+| 5 | Quicksilver Draught | a vial for an ally or yourself: faster, and spells cost less |
+| 6 | Caustic Spray | a cone of acid mist that burns and weakens |
+| 7 | Elixir of the Still | a glassy shield, and every slow, root and burn washed off; free when the still is ready |
+| 8 | Transmute to Lead | a foe's weapon turns to lead: no guns or blades for a moment (spells still cast) |
+| 9 | Alkahest Bomb | a big flask bursts, then every puddle of yours nearby bursts in a chain |
+| 10 | Magnum Opus | ultimate: a circle turns to gold: foes inside stand as gilded statues, allies are shielded |
+
+## Dragonkin
+
+*The Drakeblood* · burst, mobility, zone · fire and wind. A human with dragon blood: no tail, no horns, the dragon shows
+in the magic. She breathes cobalt fire, beats wings of blue flame that carry her up and over the field (every flight
+ends back on the ground), hardens copper scales over her skin and hoards what she takes.
+
+**Passive · Dragon Scales**: every 5 s without taking damage she grows a copper scale (up to 4); each one cuts the next
+hit and is spent; with all four her Breath burns hotter. Hoard fills from the damage she deals.
+
+| Slot | Spell | In short |
+|---|---|---|
+| G | Wingbeat | a flap 8 m forward and up; `G` again in the air flaps once more |
+| 1 | Dragonfire Breath | a cone of cobalt fire you sweep with the camera; foes catch blue flame |
+| 2 | Wing Buffet | wings of flame beat once and shove everyone near you back |
+| 3 | Skyfall Talon | flap up toward your mark and dive: a burst, a knockdown, burning ground |
+| 4 | Cobalt Comet | a blue fireball that bursts into scattering embers |
+| 5 | Scale Armour | copper scales harden: less damage taken, fireproof |
+| 6 | Dragon's Greed | a ring of coins slows the foes inside and fills your Hoard |
+| 7 | Wyrm Wind | a wall of blue flame rolls along the ground and knocks foes down |
+| 8 | Draconic Roar | a roar that silences the foes in front of you |
+| 9 | Firestorm Ascent | climb on your wings and rain embers on the circle under you |
+| 10 | Wrath of the Elder Wyrm | ultimate: rise inside a dragon's head and pour a river of fire down the field |
+
+## Necromancer
+
+*The Gravelord* · summoner, control, drain · shadow. She never fights alone: the dead climb out of the ground for her,
+walls of rib and skull rise where she points, and every body on the field is hers to raise. She breathes out wraiths,
+leashes souls, and when she plants her bone staff a legion answers.
+
+**Passive · Grave Tithe**: anyone who dies near her leaves a grave mark for 20 s; raising on a grave is free and raises
+two, and Corpse Burst can detonate one. Each servant costs Marrow while it stands; a servant that falls gives some back.
+
+| Slot | Spell | In short |
+|---|---|---|
+| G | Wraithwalk | an 8 m glide, half-seen like a wraith |
+| 1 | Bone Spear | a spear of bone down your aim: the first foe is struck and slowed |
+| 2 | Raise Dead | a skeleton warrior climbs out at your mark and fights for you (on a grave: free, and two rise) |
+| 3 | Corpse Burst | your servant or a grave near your mark bursts into bone shards |
+| 4 | Wall of Bone | a 6 m wall of rib and skull; the slot again collapses it in a spray of shards |
+| 5 | Soul Leash | a tether that drains the foe under your aim, feeding your Marrow and a little health |
+| 6 | Wraith | a wraith drifts to the foe, wails until they flee in fear and haunts them |
+| 7 | Grave Chill | a circle of grave-frost: foes inside are slowed, your servants strike harder |
+| 8 | Legion Command | your servants run to your mark and strike the foe there together |
+| 9 | Lich's Bargain | your servants crumble into bone armour; your next raise brings one more |
+| 10 | Rise, My Legion | ultimate: a death circle bursts and a legion of the dead rises to fight |
+
+## Chronomancer
+
+*Keeper of the Hour* · control, support, mobility · arcane. She does not bend the world's time, only her own: she runs
+back along her last breaths, writes a spell into the future so it strikes twice and freezes a circle in sand-glass while
+the hours rise around it. Brass, sand and clock-glass.
+
+**Passive · Tempo**: every cast fills the Tempo gauge; at 100 the next spell comes back at once. Under a third of her
+health, once every 30 s, a shield of sand catches the blow.
+
+| Slot | Spell | In short |
+|---|---|---|
+| G | Quickstep | a 7 m burst-run with three brass afterimages |
+| 1 | Sand Bolt | a bolt of sand along your crosshair: damage and a slow |
+| 2 | Rewind | run back along your own path of the last 4 seconds |
+| 3 | Stasis Snare | a clock face at your mark; when its hands lock, everyone inside is frozen in sand-glass |
+| 4 | Time Dilation | gear rings at your mark: your side moves faster inside, everyone else slower |
+| 5 | Echo Cast | your next spell is written into the future: 2 s after it lands, an echo plays it again |
+| 6 | Steal Time | a sand ribbon slows and silences a foe and speeds you up |
+| 7 | Hourglass Ward | a shield for an ally (or yourself); when it ends, its sand bursts and slows foes nearby |
+| 8 | Clockwork Sentinel | a brass turret at your mark fires sand bolts at the nearest foe |
+| 9 | Age | the foe grows weak and slow, and one of their buffs falls away |
+| 10 | Hour Zero | ultimate: twelve brass hours ring your mark; at twelve the circle freezes, then every shell shatters |

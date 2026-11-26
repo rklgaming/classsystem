@@ -5,6 +5,28 @@
 Every class prints its core version in the server console on start. Each class's own changes are in the `README.md`
 inside its resource.
 
+## Twenty classes (November 2026)
+
+- **Eight new classes**: the Knight, Oni, Samurai, Shaman, Alchemist, Dragonkin, Necromancer and Chronomancer. Each has
+  ten spells, a quick ability on `G`, a passive, ten ranks and its own hall; see [The classes](classes.md). All twenty
+  are on the species screen and in `/mockfight`.
+- **Worn and held gear** (the Knight's sword and shield, the Oni's club and mask, the Samurai's katana ...): every piece
+  is a row in `config.lua` with a server switch, and each player can hide their own; see
+  [Configuration](configuration.md#worn-and-held-gear).
+- **Witch 1.3.3**: `Config.RequireWeapon` can make the witch hold a wand (or any weapon from a list) to cast. Off by
+  default; see [Configuration](configuration.md#the-witchs-wand-configrequireweapon-rklwitchspells).
+
+## Class core 3.2.11 (November 2026)
+
+- **Personal switches**: `Config.UI.personal` rows show as on / off switches in the bar editor (`/<class>bar`); each
+  player's choice is saved on their PC. Scripts read them with the `GetPref` / `SetPref` exports.
+
+## Class core 3.2.10 (November 2026)
+
+- **Cast tells everyone sees**: the wind-up of a spell with a cast bar (a charge on the hands, a seal under the caster)
+  now shows on every screen in range, not only the caster's. For developers: `OnChannelStart` / `RelayChannelStart` in
+  the class core.
+
 ## Class core 3.2.9 (November 2026)
 
 - **Dashes stay on the ground.** Every dash, leap, lunge and blink now follows the floor on slopes, stairs, bridges and
@@ -30,18 +52,26 @@ inside its resource.
 
 | Resource | Version |
 |---|---|
-| `rklgods` (God) | 1.3.1 |
-| `rkldemon` (Demon) | 1.3.1 |
-| `rklmerfolk` (Merfolk) | 1.2.1 |
-| `rklvampire` (Vampire) | 1.2.2 |
-| `rklwerewolf` (Werewolf) | 1.2.1 |
-| `rklfairyspells` (Fairy) | 1.2.1 |
-| `rklwitchspells` (Witch) | 1.2.1 |
-| `rklelf` (Elf) | 1.5.1 |
-| `rklarcher` (Archer) | 1.1.1 |
-| `rklkitsune` (Kitsune) | 1.1.1 |
-| `rklpriest` (Priest) | 1.0.1 |
-| `rklassassin` (Assassin) | 1.2.1 |
+| `rklgods` (God) | 1.3.3 |
+| `rkldemon` (Demon) | 1.3.3 |
+| `rklmerfolk` (Merfolk) | 1.3.2 |
+| `rklvampire` (Vampire) | 1.3.3 |
+| `rklwerewolf` (Werewolf) | 1.3.3 |
+| `rklfairyspells` (Fairy) | 1.3.5 |
+| `rklwitchspells` (Witch) | 1.3.3 |
+| `rklelf` (Elf) | 1.6.3 |
+| `rklarcher` (Archer) | 1.6.6 |
+| `rklkitsune` (Kitsune) | 1.2.3 |
+| `rklpriest` (Priest) | 1.4.1 |
+| `rklassassin` (Assassin) | 1.6.2 |
+| `rklknight` (Knight) | 1.1.2 |
+| `rkloni` (Oni) | 1.1.1 |
+| `rklsamurai` (Samurai) | 1.1.1 |
+| `rklshaman` (Shaman) | 1.1.0 |
+| `rklalchemist` (Alchemist) | 1.1.0 |
+| `rkldragonkin` (Dragonkin) | 1.1.1 |
+| `rklnecromancer` (Necromancer) | 1.1.2 |
+| `rklchronomancer` (Chronomancer) | 1.0.8 |
 | `rklui` (HUD, shared mana, `/mockfight`) | 3.1.0 |
 
-Every class above runs class core 3.2.9.
+Every class above runs class core 3.2.11.

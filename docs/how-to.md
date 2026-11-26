@@ -10,7 +10,7 @@ change a `config.lua`, restart that resource (console: `ensure rklarcher`, or re
 The server checks it every time; players cannot change spells, classes or levels, even with a modified game.
 
 Class names for commands: `god`, `demon`, `merfolk`, `vampire`, `werewolf`, `fairy`, `witch`, `elf`, `archer`,
-`kitsune`, `priest`, `assassin`. A player's **server ID** is the number txAdmin shows next to their name.
+`kitsune`, `priest`, `assassin`, `knight`, `oni`, `samurai`, `shaman`, `alchemist`, `dragonkin`, `necromancer`, `chronomancer`. A player's **server ID** is the number txAdmin shows next to their name.
 
 ## Players and classes
 

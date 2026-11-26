@@ -3,7 +3,8 @@
 [Back to the overview](../README.md)
 
 Every class resource has the same exports. Replace `rklarcher` with the class you call (`rklgods`, `rkldemon`,
-`rklmerfolk`, `rklvampire`, `rklwerewolf`, `rklfairyspells`, `rklwitchspells`, `rklelf`, `rklarcher`, `rklkitsune`, `rklpriest`, `rklassassin`).
+`rklmerfolk`, `rklvampire`, `rklwerewolf`, `rklfairyspells`, `rklwitchspells`, `rklelf`, `rklarcher`, `rklkitsune`, `rklpriest`, `rklassassin`,
+`rklknight`, `rkloni`, `rklsamurai`, `rklshaman`, `rklalchemist`, `rkldragonkin`, `rklnecromancer`, `rklchronomancer`).
 
 ## Who holds which class
 

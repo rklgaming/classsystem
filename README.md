@@ -1,9 +1,9 @@
 # RKL Class System
 
-Twelve fantasy classes for FiveM, each with ten spells, a passive and its own class hall, plus class levels 1-50 with
+Twenty fantasy classes for FiveM, each with ten spells, a passive and its own class hall, plus class levels 1-50 with
 spell ranks, an in-game species selection screen and a fantasy HUD with one shared mana pool for every class.
 
-**Interactive guide: https://rklgaming.github.io/classsystem/** - a task finder ("How do I...?"), every class with its spells,
+**Interactive guide: https://rklgaming.github.io/classsystem/** - a task finder ("How do I...?"), the classes with their spells,
 passive, ranks and real screenshots, a level / spell rank calculator, and every command, config section and export, searchable.
 
 This repository holds the **documentation only**: how to install, set up and use the Class System. The scripts are
@@ -11,8 +11,8 @@ sold on our Tebex store and are not part of this repository.
 
 | | |
 |---|---|
-| **Classes** | God · Demon · Merfolk · Vampire · Werewolf · Fairy · Witch · Elf · Archer · Kitsune · Priest · Assassin |
-| **Spells** | 128 (ten per class + eight quick abilities) and twelve passives; the Priest also raises fallen players (works with your ambulance script) |
+| **Classes** | God · Demon · Merfolk · Vampire · Werewolf · Fairy · Witch · Elf · Archer · Kitsune · Priest · Assassin · Knight · Oni · Samurai · Shaman · Alchemist · Dragonkin · Necromancer · Chronomancer |
+| **Spells** | 216 (ten per class + sixteen quick abilities) and twenty passives; the Priest also raises fallen players (works with your ambulance script) |
 | **Progression** | ten ranks per class (the class hall) + levels 1-50 with skill points and spell ranks |
 | **HUD + mana** | `rklui`: health and mana orbs, one shared server-checked mana pool, buffs |
 | **Spell showcase** | `/mockfight demon elf`: two NPC fighters cast every spell of their class at each other, with HP bars and a winner; harmless, everyone near sees it |
@@ -46,7 +46,7 @@ ensure ox_lib
 ensure oxmysql
 ensure es_extended          # or qb-core / qbx_core (leave out for standalone)
 ensure rklui                # the HUD + shared mana (keep the folder name rklui)
-ensure [class]              # the folder with the twelve class resources
+ensure [class]              # the folder with the twenty class resources
 ensure rklselectspecies
 add_ace group.admin rklclass.admin allow
 add_ace group.admin rklmana.admin allow

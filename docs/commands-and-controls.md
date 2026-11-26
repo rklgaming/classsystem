@@ -8,7 +8,8 @@
    mana, elements, passive and three signature skills. *Embrace this path* picks it; the server checks the pick
    against your rules (changes allowed, cooldown, admin-only classes) and applies it.
 2. **Or an admin gives it**: `/setclass <server id | identifier> <class> [grade]`, and `/setclass <id> none` takes it
-   away. Class names: `god`, `demon`, `merfolk`, `vampire`, `werewolf`, `fairy`, `witch`, `elf`, `archer`, `kitsune`, `priest`, `assassin`.
+   away. Class names: `god`, `demon`, `merfolk`, `vampire`, `werewolf`, `fairy`, `witch`, `elf`, `archer`, `kitsune`, `priest`, `assassin`,
+   `knight`, `oni`, `samurai`, `shaman`, `alchemist`, `dragonkin`, `necromancer`, `chronomancer`.
 3. **Ranks**: every class has ten ranks (grade 0 = rank 1 ... grade 9 = rank 10, the leader). By default spells 1-2
    are open at rank 1 and each rank opens one more slot; quick abilities open at rank 5. The leader promotes members
    in the class hall.
@@ -26,7 +27,7 @@ where you left off.
 | **`E`** | cast a targeted spell at the ground marker |
 | **Backspace** or **right mouse** again | cancel the aim; Backspace also cancels a cast bar |
 | the same slot again | end, land or detonate a spell that keeps running (it glows on the bar) |
-| **`G`** | the quick ability (Vampire, Fairy, Witch, Elf, Archer, Kitsune, Priest, Assassin); `B` before class core 3.2.9 |
+| **`G`** | the quick ability (every class but the God, Demon, Merfolk and Werewolf); `B` before class core 3.2.9 |
 
 - **Direct** spells go off at once. **Targeted** spells show a ground marker (red = out of range) and sometimes a
   preview of the area; nothing locks on: the spell lands where you aimed and the server decides who stood there.
@@ -50,6 +51,14 @@ where you left off.
 | Archer | Piercing Shot | hold to draw; let go, left mouse or 1.2 s looses |
 | Priest | Mending Light, Aegis, Renewal, Purify, Blessing | aim at an ally and press the slot; aim at nothing (or the sky) to cast on yourself |
 | Priest | Rite of Resurrection | walk up to a fallen player and press `E` (5 s); `E`, `Backspace` or `W A S D` cancel |
+| Knight | Iron Bulwark | the slot again, or moving, stands you up |
+| Samurai | Iaijutsu Draw | keep the blade sheathed for 2 s first: the draw reaches farther and cuts deeper |
+| Alchemist | Load Reagent / Flask Toss / Transmute Floor | slot 1 picks acid, frost or ember; slots 2 and 3 use the loaded one |
+| Alchemist | Quicksilver Draught | aim at an ally; aim at nothing to drink it yourself |
+| Dragonkin | Dragonfire Breath | turn the camera to sweep the fire; the slot again ends it |
+| Dragonkin | Wingbeat | `G` again in the air flaps a second time |
+| Necromancer | Wall of Bone | the slot again collapses the wall (it hits foes close to it) |
+| Chronomancer | Hourglass Ward | aim at an ally; aim at nobody to ward yourself |
 
 ## Player commands
 
@@ -59,9 +68,13 @@ where you left off.
 | `/manageclass` | every class | open the hall of your class: your rank, your spells, the next unlock, the **Skills** tab (the leader also manages members) |
 | `/<class>bar` | each class | unlock the spell bar: drag the slots, pick a theme, shape and colour per slot; ESC or *Seal & Close* saves |
 | `/<class>bar hide` / `show` / `toggle` | each class | hide or show the bar (spells still cast while it is hidden) |
+| `/onimask` | rkloni | the Oni's horned mask on or off (saved on your PC) |
+| `/katana` | rklsamurai | the Samurai's worn katana and saya on or off (saved on your PC) |
 
 Bar commands: `/godbar`, `/demonbar`, `/merfolkbar`, `/vampirebar`, `/werewolfbar`, `/fairybar`, `/witchbar`,
-`/elfbar`, `/archerbar`, `/kitsunebar`, `/priestbar`, `/assassinbar`.
+`/elfbar`, `/archerbar`, `/kitsunebar`, `/priestbar`, `/assassinbar`, `/knightbar`, `/onibar`, `/samuraibar`, `/shamanbar`,
+`/alchemistbar`, `/dragonkinbar`, `/necromancerbar`, `/chronomancerbar`. The bar editor also holds the class's
+**personal switches** (worn gear, camera shake, the God's aura ...): each player's choice, saved on their PC.
 
 Inside the hall: `1`-`6` switch tabs, `/` searches, `PageUp` / `PageDown` change pages, `ESC` closes. An invitation
 card answers with `Y` (accept) or `N` (decline).
@@ -105,7 +118,8 @@ last. HP bars and the name of each spell show on screen, and one fighter wins. I
 it gives no XP, mana or loot. Every player within 60 m sees the same fight, also players who walk up later.
 
 - Class names: `gods`, `demon`, `merfolk`, `vampire`, `werewolf`, `fairy`, `witch`, `elf`, `archer`, `kitsune`,
-  `priest`, `assassin` (also `god`, `mermaid`, `vamp`, `wolf`, `fae`, `fox`, `healer`, `rogue` and the resource names).
+  `priest`, `assassin`, `knight`, `oni`, `samurai`, `shaman`, `alchemist`, `dragonkin`, `necromancer`, `chronomancer` (also `god`, `mermaid`, `vamp`, `wolf`,
+  `fae`, `fox`, `healer`, `rogue`, `tank`, `bulwark`, `dragon`, `drake`, `totem` and the resource names).
 - Stand on open, flat ground, on foot, facing open space. The fight ends by itself, with `/mockfight stop`, or when you
   walk away (90 m).
 - One fight per player, 45 s between two, at most 3 on the server at once, 70 m apart. Who may start one and every
