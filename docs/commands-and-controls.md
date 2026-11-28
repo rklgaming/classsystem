@@ -58,7 +58,7 @@ where you left off.
 | Dragonkin | Dragonfire Breath | turn the camera to sweep the fire; the slot again ends it |
 | Dragonkin | Wingbeat | `G` again in the air flaps a second time |
 | Necromancer | Wall of Bone | the slot again collapses the wall (it hits foes close to it) |
-| Chronomancer | Hourglass Ward | aim at an ally; aim at nobody to ward yourself |
+| Chronomancer | Rune Shield | aim at an ally; aim at nobody to shield yourself |
 
 ## Player commands
 

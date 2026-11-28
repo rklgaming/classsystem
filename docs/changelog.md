@@ -5,6 +5,16 @@
 Every class prints its core version in the server console on start. Each class's own changes are in the `README.md`
 inside its resource.
 
+## Chronomancer 1.1.0 and Samurai 1.1.2 (November 2026)
+
+- **The Chronomancer is now a rift sorcerer.** A new kit: Rift Step on `G`, Rune Bolt, Rewind, Rift Gate, Rune Shield,
+  Drop Rift, Binding Bands, Rift Barrage, Echo Cast, Time Lock and the ultimate Endless Loop; the passive Tempo stays.
+  New models and spell icons, and `/mockfight` shows every new spell. Her worn props (Rune Shield's mandala, the Binding
+  Bands) vanish on every screen as soon as the player stops being a chronomancer. See
+  [The classes](classes.md#chronomancer).
+- **Samurai 1.1.2**: the katana disappears from a player who leaves the class (another class set, or the class removed),
+  on every screen.
+
 ## Twenty classes (November 2026)
 
 - **Eight new classes**: the Knight, Oni, Samurai, Shaman, Alchemist, Dragonkin, Necromancer and Chronomancer. Each has
@@ -66,12 +76,12 @@ inside its resource.
 | `rklassassin` (Assassin) | 1.6.2 |
 | `rklknight` (Knight) | 1.1.2 |
 | `rkloni` (Oni) | 1.1.1 |
-| `rklsamurai` (Samurai) | 1.1.1 |
+| `rklsamurai` (Samurai) | 1.1.2 |
 | `rklshaman` (Shaman) | 1.1.0 |
 | `rklalchemist` (Alchemist) | 1.1.0 |
 | `rkldragonkin` (Dragonkin) | 1.1.1 |
 | `rklnecromancer` (Necromancer) | 1.1.2 |
-| `rklchronomancer` (Chronomancer) | 1.0.8 |
+| `rklchronomancer` (Chronomancer) | 1.1.0 |
 | `rklui` (HUD, shared mana, `/mockfight`) | 3.1.0 |
 
 Every class above runs class core 3.2.11.

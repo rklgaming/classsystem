@@ -44,7 +44,7 @@ after pressing <kbd>T</kbd>.
 1. Press <kbd>G</kbd> - no aiming needed (it was <kbd>B</kbd> before the class update of November 2026).
 2. Vampire Shadow Dash, Fairy Fae Step, Witch Hex Mirror, Elf Sylvan Veil, Archer Roll Shot, Kitsune Spirit Fox Step,
    Priest Sacred Step, Assassin Shade Step, Knight Guard Step, Oni Lumbering Leap, Samurai Wind Step, Shaman Spirit
-   Stride, Alchemist Glass Slide, Dragonkin Wingbeat, Necromancer Wraithwalk, Chronomancer Quickstep. It unlocks at rank 5.
+   Stride, Alchemist Glass Slide, Dragonkin Wingbeat, Necromancer Wraithwalk, Chronomancer Rift Step. It unlocks at rank 5.
 
 ### End a spell that keeps running
 
@@ -92,8 +92,8 @@ after pressing <kbd>T</kbd>.
 
 1. Open `/<class>bar`. Most classes have personal switches there, for example the God's aura, the Archer's bow on the
    back, the Kitsune's mark pips, the Priest's heal numbers and ally ring, the Assassin's daggers in hand and shroud tint,
-   the worn gear of the Knight, Oni, Samurai, Shaman, Alchemist, Dragonkin and Necromancer, the Chronomancer's worn
-   hourglasses and rings, and camera shake for several classes.
+   the worn gear of the Knight, Oni, Samurai, Shaman, Alchemist, Dragonkin and Necromancer, the Chronomancer's rune
+   mandala and bands, and camera shake for several classes.
 2. Switch them on or off; they only change what you see.
 
 ## Levels and ranks

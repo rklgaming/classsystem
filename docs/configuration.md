@@ -122,12 +122,12 @@ swordWorn = { Enabled = true, model = 'kn_sword_hip', bone = 11816, offset = vec
 | Alchemist | `Config.Gear` | `offset` | worn still and vial belt |
 | Dragonkin | `Config.Kit.gear`, `Config.Kit.wings`, `Config.Kit.scales` | `pos` | folded wings, dragon horns, scale mantle |
 | Necromancer | `Config.Kit.gear` | `pos` | worn staff and lantern (or each on its own), lich mantle, the servants' bone dress |
-| Chronomancer | the spell rows (e.g. `hourglass` in `Config.Spells.hour_zero`) | `offset` | worn props (hourglasses, rings) |
+| Chronomancer | the spell rows (`mandala` in `Config.Spells.rune_shield`, `bands` in `Config.Spells.binding_bands`); the server switch is `Config.Kit.worn` | `pos` | worn props (Rune Shield's mandala, the Binding Bands) |
 | Archer | `Config.Gear` | `offset` | bow on the back |
 | Assassin | `Config.Gear` | `offset` | daggers in hand |
 
-A few pieces belong to one spell and sit in that spell's block (the Chronomancer's hourglasses, the Necromancer's lich
-mantle); they use the same row format.
+A few pieces belong to one spell and sit in that spell's block (the Chronomancer's rune mandala and bands, the
+Necromancer's lich mantle); they use the same row format (the Chronomancer's rows add `spin`, in degrees per second).
 
 ### Personal switches (`Config.UI.personal`)
 

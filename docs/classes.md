@@ -454,23 +454,23 @@ two, and Corpse Burst can detonate one. Each servant costs Marrow while it stand
 
 ## Chronomancer
 
-*Keeper of the Hour* · control, support, mobility · arcane. She does not bend the world's time, only her own: she runs
-back along her last breaths, writes a spell into the future so it strikes twice and freezes a circle in sand-glass while
-the hours rise around it. Brass, sand and clock-glass.
+*Keeper of the Hour* · control, support, mobility · arcane. A rift sorcerer who bends space and her own time: sparking
+gold portal rings carry her and her allies across the field, drop her foes out of the sky, bind them in rune bands and
+loop them back through the same breath until the circle breaks. Brass, gold runes and portal fire.
 
 **Passive · Tempo**: every cast fills the Tempo gauge; at 100 the next spell comes back at once. Under a third of her
 health, once every 30 s, a shield of sand catches the blow.
 
 | Slot | Spell | In short |
 |---|---|---|
-| G | Quickstep | a 7 m burst-run with three brass afterimages |
-| 1 | Sand Bolt | a bolt of sand along your crosshair: damage and a slow |
+| G | Rift Step | a gold portal ring in front of you: step through and come out up to 12 m ahead |
+| 1 | Rune Bolt | a gold rune shard along your crosshair: damage and a slow |
 | 2 | Rewind | run back along your own path of the last 4 seconds |
-| 3 | Stasis Snare | a clock face at your mark; when its hands lock, everyone inside is frozen in sand-glass |
-| 4 | Time Dilation | gear rings at your mark: your side moves faster inside, everyone else slower |
-| 5 | Echo Cast | your next spell is written into the future: 2 s after it lands, an echo plays it again |
-| 6 | Steal Time | a sand ribbon slows and silences a foe and speeds you up |
-| 7 | Hourglass Ward | a shield for an ally (or yourself); when it ends, its sand bursts and slows foes nearby |
-| 8 | Clockwork Sentinel | a brass turret at your mark fires sand bolts at the nearest foe |
-| 9 | Age | the foe grows weak and slow, and one of their buffs falls away |
-| 10 | Hour Zero | ultimate: twelve brass hours ring your mark; at twelve the circle freezes, then every shell shatters |
+| 3 | Rift Gate | two linked portal rings, at your feet and at your mark: for 8 s anyone who walks into one comes out of the other |
+| 4 | Rune Shield | a spinning rune mandala shields the ally under your aim (or yourself) for 3 s |
+| 5 | Drop Rift | a ring under a foe: they fall through and drop out of a ring 12 m above; the fall never kills |
+| 6 | Binding Bands | three rune bands close round a foe: rooted and silenced for 2 s |
+| 7 | Rift Barrage | six small portal rings round your mark fire rune shards inward |
+| 8 | Echo Cast | your next Rune Bolt, Time Lock or Rift Barrage plays again as an echo 2 s after it lands |
+| 9 | Time Lock | a clock face at your mark; when its hands lock, everyone inside is frozen in sand-glass |
+| 10 | Endless Loop | ultimate: a huge rune circle at your mark; for 6 s every foe inside keeps snapping back, then it shatters |
